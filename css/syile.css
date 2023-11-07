@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: 'Istok Web', sans-serif;
+}
+
+.img-navbar{
+    padding-top: 7px;
+    padding-right: 25px;
+}
+.img-navbar img{
+    width: 80px;
+    cursor: pointer;
+}
+
+nav{
+    background: #323232;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #BD3C3C;
+    
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 10px 20px;
+    font-size: 20px;
+}
