@@ -8,15 +8,7 @@ body{
     font-family: 'Istok Web', sans-serif;
 }
 
-.img-navbar{
-    padding-top: 7px;
-    padding-right: 25px;
-}
-.img-navbar img{
-    width: 80px;
-    cursor: pointer;
-}
-
+/* Navbar general */
 nav{
     background: #323232;
     padding: 10px 20px;
@@ -24,6 +16,15 @@ nav{
     align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.img-navbar{
+    padding-top: 7px;
+    padding-right: 25px;
+}
+.img-navbar img{
+    width: 80px;
+    cursor: pointer;
 }
 
 nav a{
@@ -47,3 +48,52 @@ nav a:hover{
     padding: 10px 20px;
     font-size: 20px;
 }
+
+/* Footer */
+footer{
+    background: #323232;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
+}
+
+.img-salud{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.img-salud img{    
+    width: 200px;
+}
+
+.bloque2{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: flex-start;
+}
+
+.bloque2 a, h4, p{
+    color: #fff;    
+    text-decoration: none;
+}
+
+.bloque3{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 30px;    
+    padding-right: 30px;
+    justify-content: flex-start;
+}
+
+.bloque3 a{
+    padding: 2px;
+    color: #fff;    
+    text-decoration: none;
+}
+
