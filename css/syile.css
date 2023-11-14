@@ -16,7 +16,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -51,15 +51,69 @@ nav a:hover{
     font-size: 15px;
 }
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.title-home p{
+    color: #697268;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+
+.title-home{
+    margin-right: 6%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.t{
+    margin-right: 10px;
+}
+.img-home img{
+    width: 380px;
+    border-radius: 20px;
+}
+
+.btn-home button {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    border-radius: 10px;
+    border: none;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+
+
+
+
 /* Footer */
 footer{
     width: 100%;
     background: #323232;
-    padding: 40px 20px;
+    padding: 25px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
 }
