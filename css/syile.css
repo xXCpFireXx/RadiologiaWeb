@@ -16,7 +16,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    position:absolute;
+    position:fixed;
+    top: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -55,9 +56,10 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 150px;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 70px;
 }
 
 .title-home p{
@@ -106,12 +108,83 @@ nav a:hover{
     background-color: #9b0e0e;
 }
 
+/*Section*/
 section {
     width: 100%;
-    background-color: #9b0e0e;;
-    display: flex;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
     justify-content: center;
+    align-items: stretch;
 }
+
+.container1{
+    display: flex;
+    padding: 0px 30px 10px 40px;
+    /* padding: 35px 10px 0px 35px; */
+    background-color: #9b0e0e;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container1 .img-tel {
+    align-items: center;
+}
+
+.container1 div {
+    display: flex;
+}
+
+.container1 .tel {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.container2{
+    display: flex;
+    background-color: #896A6A;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-more button {
+    background-color: #FFFFFF;
+    color: #A01027;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-more button:hover{
+    background-color: #ececec;
+    color: #db4949;
+}
+
+
+.container3{
+    display: flex;
+    background-color: #979797;;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
 
 
 /* Footer */
