@@ -59,10 +59,11 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    margin-top: 150px;
 }
 
 .title h1 {
-    color: #BD3C3C; 
+    color: #A01027; 
     font-size: 50px;
     text-align: center;
 }
@@ -74,13 +75,15 @@ nav a:hover{
 
 section {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 500px 400px;
     justify-content: center;
+    grid-template-areas: "m  i"
+                         "v  i";
 }
 
 section h1 {
-    color: #BD3C3C;
-    font-size: 40px;
+    color: #A01027;
+    font-size: 50px;
 }
 
 section p {
@@ -89,8 +92,89 @@ section p {
 }
 
 .img-40 img{
-    width: 200px;
-    border-radius: 20px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.img-40 {
+    grid-area: i;
+}
+
+.mision {
+    grid-area: m;
+    margin-right: 30px;
+}
+
+.vision {
+    grid-area: v;
+    margin-right: 30px;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-areas: "vt vt"
+                         "v1 v4"
+                         "v2 v5"
+                         "v3 v6";
+}
+
+.valores p {
+    color: #000000;
+    text-align: justify;    
+}
+
+.vt {
+    color: #A01027;
+    font-size: 50px;
+    grid-area: vt;
+}
+
+.v1 {
+    grid-area: v1;
+    margin-right: 15px;
+}
+
+.v2 {
+    grid-area: v2;
+    margin-right: 15px;
+}
+
+.v3 {
+    grid-area: v3;
+    margin-right: 15px;
+}
+
+.v4 {
+    grid-area: v4;
+    margin-left: 15px;
+}
+
+.v5 {
+    grid-area: v5;
+    margin-left: 15px;
+}
+
+.v6 {
+    grid-area: v6;
+    margin-left: 15px;
+}
+
+.politicas {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: rgb(221,221,221);
+    background: linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(232,232,234,1) 100%);}
+
+.politicas img{
+    width: 1700px;
 }
 
 /* Footer */
