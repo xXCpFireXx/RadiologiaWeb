@@ -135,11 +135,13 @@ section p {
 .v1 {
     grid-area: v1;
     margin-right: 15px;
+    margin-bottom: 25px;
 }
 
 .v2 {
     grid-area: v2;
     margin-right: 15px;
+    margin-bottom: 25px;
 }
 
 .v3 {
@@ -162,7 +164,7 @@ section p {
     margin-left: 15px;
 }
 
-.politicas {
+.politicas-img {
     display: flex;
     align-content: center;
     align-items: center;
@@ -173,16 +175,97 @@ section p {
     background: rgb(221,221,221);
     background: linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(232,232,234,1) 100%);}
 
-.politicas img{
+.politicas-img img{
     width: 1700px;
 }
 
+.politicas {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-areas: "p1 p3"
+                         "p2 p4";
+}
+
+.politicas p {
+    color: #000000;
+    text-align: justify;
+}
+
+.p1 {
+    grid-area: p1;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.p2 {
+    grid-area: p2;
+    margin-right: 15px;
+}
+
+.p3 {
+    grid-area: p3;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.p4 {
+    grid-area: p4;
+    margin-left: 15px;
+}
+
+
+.more {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "h4 h4"
+                         "btns btns";
+}
+
+.more h4{
+    grid-area: h4;
+    color: #000000;
+    font-size: x-large;
+}
+.btn-more {
+    display: flex;
+    grid-area: btns;
+    margin-top: 10px;
+}
+.btn-more button {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    border-radius: 10px;
+    border: none;   
+    width: 300px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.btn-more button:hover{
+    background-color: #9b0e0e;
+}
+
+.btn1 {
+    grid-area: btn1;
+}
+
+.btn2 {
+    grid-area: btn2;
+}
 /* Footer */
 footer{
-    width: 100%;
-    background: #323232;
-    padding: 25px 20px;
     display: flex;
+    background: #323232;
+    padding: 25px 20px;    
     align-items: center;
     justify-content: center;
     /* position: absolute; */
