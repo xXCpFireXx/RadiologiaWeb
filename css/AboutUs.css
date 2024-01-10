@@ -261,6 +261,7 @@ section p {
 .btn2 {
     grid-area: btn2;
 }
+
 /* Footer */
 footer{
     display: flex;
