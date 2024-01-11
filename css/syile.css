@@ -160,12 +160,14 @@ section {
 .btn-more button {
     background-color: #FFFFFF;
     color: #A01027;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Istok Web', sans-serif;
     font-weight: bold;
     padding: 2% 3% 2% 3%;
     border-radius: 10px;
     border: none;
+    width: 90px;
+    height: 40px;
     cursor: pointer;
     margin-top: 10px;
 }
