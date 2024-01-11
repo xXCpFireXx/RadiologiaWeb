@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 
 body{    
     font-family: 'Istok Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* Navbar general */
@@ -86,6 +92,7 @@ nav a:hover{
     font-size: 60px;
     color: #ce2020;
 }
+
 .img-home img{
     width: 400px;
     border-radius: 20px;
@@ -196,7 +203,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+    margin-top: auto;
     bottom: 0%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
 }
@@ -241,7 +248,6 @@ footer{
 
 /* MODO MOBILE */
 
-@media screen and (max-width: 430px){
 /* Navbar general */
 nav{
     width: 100%;
@@ -291,8 +297,6 @@ nav a:hover{
     justify-content: center;
     grid-template-columns: 650px 400px;
     margin-top: 150px;
-    /* margin-left: 435px; */
-    /* margin-right: 435px; */
     margin-bottom: 70px;
     align-content: center;
 }
@@ -321,6 +325,7 @@ nav a:hover{
 .t{
     margin-right: 10px;
 }
+
 .img-home img{
     width: 400px;
     border-radius: 20px;
@@ -356,13 +361,13 @@ section {
 .container1{
     display: flex;
     padding: 0px 30px 10px 40px;
-    /* padding: 35px 10px 0px 35px; */
     background-color: #9b0e0e;
     justify-content: center;
     flex-direction: column;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .container1 .img-tel {
     align-items: center;
 }
@@ -420,9 +425,6 @@ section {
 }
 
 
-
-
-
 /* Footer */
 footer{
     width: 100%;
@@ -431,8 +433,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
-    bottom: 0%;
+    bottom: 0;
+    align-self: flex-end;
     box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
 }
 
@@ -472,5 +474,4 @@ footer{
     padding: 2px;
     color: #fff;    
     text-decoration: none;
-}
 }

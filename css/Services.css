@@ -4,23 +4,19 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%
+}
+
 body{    
     font-family: 'Istok Web', sans-serif;
-    background-image: url(../img/image\ 13\ \(1\).png);
-    background-size: cover;
-
+    background-image: url(../img/Fondo-Servicios.jpg);
+    background-size: 160%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.35);
-    z-index: -1;
-}
 
 /* Navbar general */
 nav{
@@ -33,6 +29,7 @@ nav{
     position:fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 1;
 }
 
 .img-navbar{
@@ -107,6 +104,14 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.s1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+    transition:all 0.3s ease;
 }
 
 .s2 {
@@ -116,6 +121,14 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.s2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+    transition:all 0.3s ease;
 }
 
 .s3 {
@@ -125,6 +138,14 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.s3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+    transition:all 0.3s ease;
 }
 
 .s4 {
@@ -133,6 +154,14 @@ nav a:hover{
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.s4:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+    transition:all 0.3s ease;
 }
 
 .s5 {
@@ -141,6 +170,14 @@ nav a:hover{
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.s5:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+    transition:all 0.3s ease;
 }
 
 .s6 {
@@ -149,9 +186,15 @@ nav a:hover{
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
-
+.s6:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+    transition:all 0.3s ease;
+}
 /* Footer */
 footer{
     display: flex;
@@ -159,8 +202,8 @@ footer{
     padding: 25px 20px;    
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
-    bottom: 0%;
+    margin-top: auto;
+    bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
 }
 

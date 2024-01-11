@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{    
     font-family: 'Istok Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* Navbar general */
@@ -269,7 +276,7 @@ footer{
     padding: 25px 20px;    
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+    margin-top: auto;
     bottom: 0%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
 }
