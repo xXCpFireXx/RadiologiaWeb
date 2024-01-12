@@ -35,6 +35,13 @@ nav{
 .img-navbar{
     padding-top: 7px;
     padding-right: 25px;
+    transition:all 0.3s ease;
+}
+
+.img-navbar:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .img-navbar img{
     width: 80px;
@@ -49,18 +56,25 @@ nav a{
 
 nav a:hover{
     color: #BD3C3C;
-    
 }
 
 .menu{
     display: flex;
     align-items: center;
     list-style: none;
+    
 }
 
 .menu li{
     padding: 10px 20px;
     font-size: 15px;
+    transition:all 0.3s ease;
+}
+
+.menu li:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -105,13 +119,13 @@ nav a:hover{
     flex-direction: column;
     margin-bottom: 30px;
     cursor: pointer;
+    transition:all 0.3s ease;
 }
 
 .s1:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.4);
-    transform: scale(1.1);    
-    transition:all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .s2 {
@@ -122,13 +136,13 @@ nav a:hover{
     flex-direction: column;
     margin-bottom: 30px;
     cursor: pointer;
+    transition:all 0.3s ease;
 }
 
 .s2:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.4);
-    transform: scale(1.1);    
-    transition:all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .s3 {
@@ -139,13 +153,13 @@ nav a:hover{
     flex-direction: column;
     margin-bottom: 30px;
     cursor: pointer;
+    transition:all 0.3s ease;
 }
 
 .s3:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.4);
-    transform: scale(1.1);    
-    transition:all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .s4 {
@@ -155,13 +169,13 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    transition:all 0.3s ease;
 }
 
 .s4:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.4);
-    transform: scale(1.1);    
-    transition:all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .s5 {
@@ -171,13 +185,13 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    transition:all 0.3s ease;
 }
 
 .s5:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.4);
     transform: scale(1.1);    
-    transition:all 0.3s ease;
 }
 
 .s6 {
@@ -187,13 +201,13 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    transition:all 0.3s ease;
 }
 
 .s6:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.4);
-    transform: scale(1.1);    
-    transition:all 0.3s ease;
+    transform: scale(1.1);
 }
 
 /* Footer */

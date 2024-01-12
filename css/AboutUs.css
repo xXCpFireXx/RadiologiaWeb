@@ -26,11 +26,19 @@ nav{
     position:fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 1;
 }
 
 .img-navbar{
     padding-top: 7px;
     padding-right: 25px;
+    transition:all 0.3s ease;
+}
+
+.img-navbar:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .img-navbar img{
     width: 80px;
@@ -45,18 +53,25 @@ nav a{
 
 nav a:hover{
     color: #BD3C3C;
-    
 }
 
 .menu{
     display: flex;
     align-items: center;
     list-style: none;
+    
 }
 
 .menu li{
     padding: 10px 20px;
     font-size: 15px;
+    transition:all 0.3s ease;
+}
+
+.menu li:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*Body*/

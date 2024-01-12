@@ -25,11 +25,19 @@ nav{
     position:fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 1;
 }
 
 .img-navbar{
     padding-top: 7px;
     padding-right: 25px;
+    transition:all 0.3s ease;
+}
+
+.img-navbar:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .img-navbar img{
     width: 80px;
@@ -44,18 +52,25 @@ nav a{
 
 nav a:hover{
     color: #BD3C3C;
-    
 }
 
 .menu{
     display: flex;
     align-items: center;
     list-style: none;
+    
 }
 
 .menu li{
     padding: 10px 20px;
     font-size: 15px;
+    transition:all 0.3s ease;
+}
+
+.menu li:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .home{
@@ -65,6 +80,7 @@ nav a:hover{
     margin-top: 150px;
     margin-bottom: 70px;
     align-content: center;
+    animation:slide-in-left .97s both
 }
 
 
@@ -78,6 +94,7 @@ nav a:hover{
 
 .title-home{
     margin-right: 6%;
+    
 }
 
 .title{
@@ -88,6 +105,11 @@ nav a:hover{
     margin-bottom: 2%;
 }
 
+.slide-in-left{animation:slide-in-left .9s both}
+
+ @keyframes slide-in-left{
+    0%{transform:translateX(-100px);opacity:0}
+    100%{transform:translateX(0);opacity:1}}
 .t{
     font-size: 60px;
     color: #ce2020;
@@ -109,11 +131,14 @@ nav a:hover{
     border: none;
     margin-right: 3%;
     cursor: pointer;
-    
+    transition:all 0.3s ease;
 }
 
 .btn-home button:hover{
     background-color: #9b0e0e;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*Section*/
@@ -124,6 +149,7 @@ section {
     justify-content: center;
     align-items: stretch;
 }
+
 
 .container1{
     display: flex;
@@ -170,16 +196,20 @@ section {
     height: 40px;
     cursor: pointer;
     margin-top: 10px;
+    transition:all 0.3s ease;
 }
 
 .btn-more {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;    
 }
 
 .btn-more button:hover{
     background-color: #ececec;
     color: #db4949;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 

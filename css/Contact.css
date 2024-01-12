@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    height: 100%;
+
+html{
+    height: 100%
 }
 
 body{    
     font-family: 'Istok Web', sans-serif;
+    background-image: url(../img/Fondo-Contacto.png);
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -74,6 +77,7 @@ nav a:hover{
     transform: scale(1.1);
 }
 
+/* Body */
 .title{
     display: grid;
     grid-template-columns: 900px;
@@ -84,120 +88,20 @@ nav a:hover{
 }
 
 .title h1 {
-    color: #A01027; 
-    font-size: 50px;
+    color: #ffffff; 
+    font-size: 60px;
     text-align: center;
 }
 
 .title p {
-    color: #000000;
-    text-align: justify;
+    color: #fbfbfb;
+    text-align:center;
     margin-bottom: 50px;
-}
-
-.video1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.video1 iframe{
-    width:900px;
-    height: 480px;
-    border-radius: 20px;
-    margin-bottom: 40px;
-}
-
-.btn-portal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.btn-portal button {
-    background-color: #BD3C3C;
-    color: #fff;
-    font-size: 45px;
-    font-family: 'Istok Web', sans-serif;
-    font-weight: bold;
-    padding: 2% 3% 2% 3%;
-    border-radius: 15px;
-    border: none;   
-    width: 900px;
-    height: auto;
-    cursor: pointer;
-    margin-top: 20px;
-    transition:all 0.3s ease;
-}
-
-.btn-portal button:hover{
-    background-color: #9b0e0e;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.video2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-}
-
-.video2 iframe{
-    width:900px;
-    height: 480px;
-    border-radius: 20px;
-    margin-bottom: 80px;
-    margin-top: 20px;
-}
-
-.video3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.video3 iframe{
-    width:900px;
-    height: 480px;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-.btn-portal2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.btn-portal2 button {
-    background-color: #BD3C3C;
-    color: #fff;
-    font-size: 30px;
-    font-family: 'Istok Web', sans-serif;
-    font-weight: bold;
-    padding: 2% 3% 2% 3%;
-    border-radius: 15px;
-    border: none;   
-    width: 600px;
-    height: auto;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.btn-portal2 button:hover{
-    background-color: #9b0e0e;
+    font-size: 20px;
 }
 
 
+/* Footer */
 footer{
     display: flex;
     background: #323232;
