@@ -100,6 +100,43 @@ nav a:hover{
     font-size: 20px;
 }
 
+.container-out {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+}
+.container-in {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 25px 35px 25px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputs, .mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /* Footer */
 footer{
