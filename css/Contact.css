@@ -108,7 +108,7 @@ nav a:hover{
 }
 .container-in {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 600px 400px;
     justify-content: center;
     justify-items: center;
     background-color: #fff;
@@ -123,6 +123,7 @@ nav a:hover{
 
 form {
     display: flex;
+    max-width: 500px;
     flex-direction: column;
     justify-content: center;
 }
@@ -136,6 +137,18 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map iframe {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
 }
 
 /* Footer */
