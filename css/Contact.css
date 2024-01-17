@@ -173,10 +173,10 @@ textarea {
 .btn-form input {
     background-color: #BD3C3C;
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     font-family: 'Istok Web', sans-serif;
     font-weight: bold;
-    padding: 2% 3% 2% 3%;
+    padding: 1% 0 1% 0;
     width: 100%;
     border-radius: 10px;
     border: none;
