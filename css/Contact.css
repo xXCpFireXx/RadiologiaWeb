@@ -131,12 +131,65 @@ form {
 .inputs, .mensaje {
     display: flex;
     flex-direction: column;
+    resize:none;
+}
+
+.mensaje {
+    height: 150px;
+}
+
+.inputs input, textarea, select{
+    border:1px solid #908f8f;
+    height: 35px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family:'Istok Web';
+    font-size: 20px;
+    box-shadow: 5px 7px 5px -4px rgba(0,0,0,0.1);
+    resize: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+.terms input {
+    border:1px solid #908f8f;
+    height: 25px;
+    border-radius: 8px;
+    width: 100%;
+    font-family:'Istok Web';
+    font-size: 10px;
 }
 
 .terms {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.btn-form input {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-right: 3%;
+    cursor: pointer;
+    transition:all 0.3s ease;
+
+    &:hover {
+        background-color: #9b0e0e;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(1.1);
+    }
 }
 
 .map {
