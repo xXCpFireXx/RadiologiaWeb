@@ -43,8 +43,8 @@
                 <div class="formulario">
 
                     <form action="#">
-                        <select name="Motivos" id="mot">
-                            <option value="selecciona">Motivo</option>
+                        <select name="Motivos" id="mot" autofocus="">
+                            <option value="selecciona">Seleciona un motivo</option>
                             <option value="CR">Cita o Resultado</option>
                             <option value="P">Petición</option>
                             <option value="Q">Queja</option>
@@ -53,18 +53,18 @@
                         </select>
 
                         <div class="inputs">
-                            <input type="text" id="input-name" placeholder=" Nombre">
-                            <input type="email" id="input-email" placeholder=" Correo electrónico">
-                            <input type="text" id="input-tel" placeholder=" Teléfono">
+                            <input type="text" id="input-name" placeholder="Nombre" required="">
+                            <input type="email" id="input-email" placeholder="Correo electrónico" required="">
+                            <input type="tel" id="input-tel" placeholder="Teléfono" required="">
                         </div>
                         <div class="mensaje">
-                            <textarea name="message" type="text" id="input-message" placeholder=" Mensaje"></textarea>
+                            <textarea name="message" type="text" id="input-message" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="terms">
-                            <input type="checkbox" id="input-terms">
-                            <p style="color: black;">Autorizo al Departamento de Radiología S.A al tratamiento de mis
+                            <input type="checkbox" id="input-terms" required="">
+                            <strong>Autorizo al Departamento de Radiología S.A al tratamiento de mis
                                 datos personales en
-                                conformidad a su Politica de Tratamiento y Protección de Datos</p>
+                                conformidad a su Politica de Tratamiento y Protección de Datos</strong>
                         </div>
                         <div class="btn-form">
                             <input type="submit" value="Enviar" />
@@ -74,7 +74,9 @@
                 </div>
 
                 <div class="map">
-                    <h1>Ubicación</h1>
+                    <div class="map-t">
+                        <h1>Ubicación</h1>
+                    </div>                    
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.116055502865!2d-75.5649139!3d6.2484345999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f87844d785%3A0xaa007bdb98696075!2sEdificio%20La%20Palencia!5e0!3m2!1ses!2sco!4v1705422741971!5m2!1ses!2sco"
                          style="border:0;" allowfullscreen="" loading="lazy"
