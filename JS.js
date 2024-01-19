@@ -66,3 +66,17 @@ ScrollReveal().reveal('.btn-portal', {
     reset: true,
     easing: 'ease-in'
 });
+
+ScrollReveal().reveal('.formulario', {
+    delay: 275,
+    duration: 450,
+    reset: true,
+    easing: 'ease-in'
+});
+
+ScrollReveal().reveal('.map-t', {
+    delay: 375,
+    duration: 550,
+    reset: true,
+    easing: 'ease-in'
+});
