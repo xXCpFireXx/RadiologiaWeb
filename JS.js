@@ -51,14 +51,6 @@ ScrollReveal().reveal('iframe', {
     easing: 'ease-out'
 });
 
-ScrollReveal().reveal('footer', {
-    delay: 375,
-    duration: 650,
-    reset: true,
-    easing: 'ease-out',
-    origin: 'bottom',
-    distance: '10px'
-});
 
 ScrollReveal().reveal('.btn-portal', {
     delay: 375,
@@ -80,3 +72,15 @@ ScrollReveal().reveal('.map-t', {
     reset: true,
     easing: 'ease-in'
 });
+
+function formCR() {
+    
+    var status = document.getElementById("mot"); 
+
+
+    if (status.value == "CR") {
+        document.getElementById("form2").style.display = "block";
+    } else {
+        document.getElementById("form2").style.display = "none";
+    }
+}

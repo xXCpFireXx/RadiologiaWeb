@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script>
+        
+    </script>
 </head>
 
 <body>
@@ -43,23 +45,31 @@
         <div class="container-out">
             <div class="container-in">
                 <div class="formulario">
-
-                    <form action="#">
-                        <select name="Motivos" id="mot" autofocus="">
-                            <option value="selecciona">Seleciona un motivo</option>
-                            <option value="CR">Cita o Resultado</option>
-                            <option value="P">Petición</option>
-                            <option value="Q">Queja</option>
-                            <option value="R">Reclamo</option>
-                            <option value="S">Sugerencia</option>
+                    <!-- <script>
+                        alert("Debes seleccionar primero un motivo");
+                        
+                    </script> -->
+                    <form https://formsubmit.co/no-responder@dptoradiologia.com" method="POST">
+                        <select name="Motivos" id="mot" onchange="formCR()" required>
+                            <option value="" selected disabled hidden>Seleciona un motivo</option>
+                            <option value="CR" >Cita o Resultado</option>
+                            <option value="P" >Petición</option>
+                            <option value="Q" >Queja</option>
+                            <option value="R" >Reclamo</option>
+                            <option value="S" >Sugerencia</option>
                         </select>
 
-                        <div class="inputs">
-                            <input type="text" id="input-name" placeholder="Nombre" required="">
+                        <div class="inputs" id="inputs">
+                            <input type="text" id="input-name" placeholder="Nombre completo" required="">
                             <input type="email" id="input-email" placeholder="Correo electrónico" required="">
-                            <input type="tel" id="input-tel" placeholder="Teléfono" required="">
+                            <input type="tel" id="input-tel" placeholder="Teléfono">
+                            <div id="form2">
+                                <input type="text" id="input-asu" placeholder="Asunto" required="">
+                                <input type="number"" id="input-cc" placeholder="Número de documento" required="">
+                                <input type="text" id="input-eps" placeholder="EPS" required="">
+                            </div>                            
                         </div>
-                        <div class="mensaje">
+                        <div class="mensaje" id="mensaje">
                             <textarea name="message" type="text" id="input-message" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="terms">
@@ -114,6 +124,7 @@
             </div>
         </footer>
         <script src="../JS.js"></script>
+        
     </body>
 
 </html>

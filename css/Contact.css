@@ -205,7 +205,8 @@ textarea {
 
 .map iframe {
     width: 400px;
-    height: 500px;
+    min-height: 200px;
+    height: 100%;
     border-radius: 20px;
 }
 
