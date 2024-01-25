@@ -8,14 +8,12 @@ ScrollReveal().reveal('.title', {
 ScrollReveal().reveal('section', {
     delay: 375,
     duration: 400,
-    reset: true,
     easing: 'ease-in'
 });
 
 ScrollReveal().reveal('.valores', {
     delay: 375,
     duration: 450,
-    reset: true,
     easing: 'ease-in'
 });
 
@@ -24,14 +22,12 @@ ScrollReveal().reveal('.politicas-img', {
     duration: 450,    
     easing: 'ease-out',
     origin: 'left',
-    distance: '-500px',
-    reset: true
+    distance: '-500px'
 });
 
 ScrollReveal().reveal('.politicas', {
     delay: 375,
     duration: 450,
-    reset: true,
     easing: 'ease-out'
 });
 
@@ -45,7 +41,6 @@ ScrollReveal().reveal('.more', {
 ScrollReveal().reveal('iframe', {
     delay: 375,
     duration: 650,
-    reset: true,
     easing: 'ease-out'
 });
 
@@ -53,35 +48,30 @@ ScrollReveal().reveal('iframe', {
 ScrollReveal().reveal('.btn-portal', {
     delay: 375,
     duration: 550,
-    reset: true,
     easing: 'ease-in'
 });
 
 ScrollReveal().reveal('.formulario', {
     delay: 275,
     duration: 450,
-    reset: true,
     easing: 'ease-in'
 });
 
 ScrollReveal().reveal('.map-t', {
     delay: 375,
     duration: 550,
-    reset: true,
     easing: 'ease-in'
 });
 
 ScrollReveal().reveal('.container-carousel-out', {
     delay: 375,
     duration: 550,
-    reset: true,
     easing: 'ease-in'
 });
 
 ScrollReveal().reveal('.preparaciones h4', {
     delay: 375,
     duration: 550,
-    reset: true,
     easing: 'ease-in'
 });
 

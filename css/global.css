@@ -74,7 +74,101 @@ nav a:hover{
     transform: scale(1.1);
 }
 
+/* Modal Estados Financieros*/
+#btn-modal{
+    display: none;
+    transition: all 3s ease-out;
+}
 
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked ~ .modal-container {
+    display: flex;    
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.modal-content h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px
+}
+
+.modal-content img {
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.modal__close{
+    display: flex;    
+    justify-content: flex-end;
+  }
+
+.modal__close i {
+    background-color: rgb(172, 26, 26);
+    border-radius: .25rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btns-modal {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.btns-modal button {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    width: 310px;
+    margin: 2%;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.btns-modal button:hover{
+    background-color: #9b0e0e;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.cerrar {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
 
 /* Footer */
 footer{
@@ -125,4 +219,10 @@ footer{
     padding: 2px;
     color: #fff;    
     text-decoration: none;
+}
+
+.bloque3 label{
+    padding: 2px;
+    color: #fff;
+    cursor: pointer;
 }
