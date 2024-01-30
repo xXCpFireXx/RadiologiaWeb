@@ -86,9 +86,7 @@ function formCR() {
         document.getElementById("form2").style.display = "none";
     }
 }
-
-
-// Slider
+//Slider
 const btnLeft = document.querySelector(".btn-left"),
       btnRight = document.querySelector(".btn-right"),
       slider = document.querySelector("#slider"),
