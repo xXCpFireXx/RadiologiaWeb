@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100vh;
+}
+
 body{    
     font-family: 'Istok Web', sans-serif;
     display: flex;
@@ -246,10 +250,13 @@ footer{
 
     header{
         justify-content: space-between;
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
+    .img-navbar{
+        width: 4.2rem;
+    }
     .nav{
         opacity: 0;
         visibility: hidden;
@@ -285,5 +292,16 @@ footer{
     .nav-list li a{
         font-size: 1.5rem;
     }
+        
+    footer{
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
     
+    .img-salud{
+        padding-left: 1rem;
+    }
+
 }
