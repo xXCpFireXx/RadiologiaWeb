@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#323232">
   <title>Departamento de Radiología</title>
   <link rel="icon" href="../img/Logo.ico">
   <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="css/Index.css" />
+  <link rel="stylesheet" href="css/Index.css"/>
 
   <!--=============== fonts google ===============-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,20 +26,22 @@
 <body>
 
   <!--Navbar-->
-  <nav>
-    <div class="img-navbar">
-      <a href="/index.html"><img src="/img/Logo.png" alt="Logo" /></a>
-    </div>
+  <header>
+    <a href="/index.html"><img class="img-navbar" src="/img/Logo.png" alt="Logo"/></a>
+    <button id="open" class="open-nav"><i class='bx bx-menu'></i></button>
 
-    <ul class="menu">
-      <li><a href="/index.html" style="color: #BD3C3C;">INICIO</a></li>
-      <li><a href="/views/AboutUs.html">NOSOTROS</a></li>
-      <li><a href="/views/Services.html">SERVICIOS</a></li>
-      <li><a href="/views/Resultados.html">RESULTADOS</a></li>
-      <li><a href="/views/ContactUs.html">CONTACTO</a></li>
-    </ul>
-  </nav>
-
+    <nav class="nav" id="nav">
+      <button id="close" class="close-nav"><i class='bx bx-x'></i></button>
+      <ul class="nav-list">
+        <li><a href="/index.html" style="color: #BD3C3C;">INICIO</a></li>
+        <li><a href="/views/AboutUs.html">NOSOTROS</a></li>
+        <li><a href="/views/Services.html">SERVICIOS</a></li>
+        <li><a href="/views/Resultados.html">RESULTADOS</a></li>
+        <li><a href="/views/ContactUs.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header> 
+  
   <!-- Body -->
   <div class="home">
     <div class="title-home">
