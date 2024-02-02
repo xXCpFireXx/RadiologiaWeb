@@ -158,7 +158,7 @@ section {
     border-bottom-right-radius: 20px;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1024px){
 
     .home{
         grid-template-columns: 80%;
@@ -172,7 +172,7 @@ section {
         grid-area: title;
         justify-content: center;
         line-height: 1;
-
+        flex-direction: column;
         & h1 {
             text-align: center;
         }
@@ -224,7 +224,8 @@ section {
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
 
-        & h1 {
+        & .title, h1 {
+            align-content: flex-start;
             text-align: start;
             margin-bottom: 1rem;
         }
