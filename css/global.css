@@ -153,7 +153,9 @@ header {
     padding: 3%;
     border-radius: 10px;
     border: none;
-    width: 400px;
+    min-width: 400px;
+            max-width: 600px;
+    width: 100%;
     margin: 2%;
     cursor: pointer;
     transition:all 0.3s ease;
@@ -246,8 +248,16 @@ footer{
         background-color: transparent;
         color: #ffffff;
         cursor: pointer;
-    }
+        transition:all 0.3s ease;
 
+        &:hover{
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            color: var(--red);  
+        }
+    }
+   
     header{
         justify-content: space-between;
         padding-right: 2rem;
@@ -303,5 +313,14 @@ footer{
     .img-salud{
         padding-left: 1rem;
     }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .btns-modal button {
+        min-width: 300px;
+        max-width: 600px;
+        width: 100%;}
 
 }

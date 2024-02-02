@@ -19,7 +19,7 @@
     margin-bottom: 50px;
 }
 
-.video1 {
+.video1, .video3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +79,7 @@
     margin-top: 20px;
 }
 
-.video3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .video3 iframe{
     width:900px;
@@ -119,4 +114,46 @@
 
 .btn-portal2 button:hover{
     background-color: #9b0e0e;
+}
+
+
+
+@media screen and (max-width: 950px){
+
+    
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+    }
+
+
+    .video1, .video2, .video3 {
+        text-align: center;
+        width: 100%;
+        margin-top: 0.5rem;
+
+        & iframe {
+            width:90%;
+            height: 300px;
+            
+        }
+    }
+
+    .btn-portal, .btn-portal2 {
+        width: 100%;
+        padding: 1rem;
+        
+
+        & button {
+            width: 100%;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    
 }

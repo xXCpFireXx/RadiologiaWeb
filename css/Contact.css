@@ -152,3 +152,64 @@ textarea {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 950px){
+
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+        }
+    }
+
+
+    .formulario {
+        grid-area: f;
+
+        & form {
+            margin-left: 1.3rem;
+        }
+    }
+
+    terms {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .map{
+        grid-area: map;
+        width: 100%;
+        
+    }
+
+    .map iframe {
+        margin-left: 1.3rem;
+        max-width: 500px;
+        width: 100%;
+        min-height: 300px;
+        height: 100%;
+    }
+    
+    .map-t {
+        margin-left: 1.3rem;
+        width: 100%;
+
+        & h1 {
+            max-width: 500px;
+        }
+    }
+    .container-out {
+        margin: 2rem;
+    }
+
+    .container-in {
+        width: 100%;
+        gap: 2rem;
+        grid-template-columns: 90%;
+        grid-template-areas: "f"
+        "map";
+    }
+
+
+}
