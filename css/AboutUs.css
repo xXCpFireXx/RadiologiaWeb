@@ -23,6 +23,7 @@
 
 section {
     display: grid;
+    gap: 1rem;
     grid-template-columns: 500px 400px;
     justify-content: center;
     grid-template-areas: "m  i"
@@ -40,7 +41,7 @@ section p {
 }
 
 .img-40 img{
-    width: 400px;
+    width: 100%;
     border-radius: 30px;
 }
 
@@ -50,16 +51,15 @@ section p {
 
 .mision {
     grid-area: m;
-    margin-right: 30px;
 }
 
 .vision {
     grid-area: v;
-    margin-right: 30px;
 }
 
 .valores {
     display: grid;
+    gap: 1.2rem;
     grid-template-columns: 450px 450px;
     justify-content: center;
     margin-top: 20px;
@@ -82,34 +82,26 @@ section p {
 
 .v1 {
     grid-area: v1;
-    margin-right: 15px;
-    margin-bottom: 25px;
 }
 
 .v2 {
     grid-area: v2;
-    margin-right: 15px;
-    margin-bottom: 25px;
 }
 
 .v3 {
     grid-area: v3;
-    margin-right: 15px;
 }
 
 .v4 {
     grid-area: v4;
-    margin-left: 15px;
 }
 
 .v5 {
     grid-area: v5;
-    margin-left: 15px;
 }
 
 .v6 {
     grid-area: v6;
-    margin-left: 15px;
 }
 
 .politicas-img {
@@ -129,6 +121,7 @@ section p {
 
 .politicas {
     display: grid;
+    gap: 1rem;
     grid-template-columns: 450px 450px;
     justify-content: center;
     margin-top: 20px;
@@ -143,24 +136,18 @@ section p {
 
 .p1 {
     grid-area: p1;
-    margin-right: 15px;
-    margin-bottom: 25px;
 }
 
 .p2 {
     grid-area: p2;
-    margin-right: 15px;
 }
 
 .p3 {
     grid-area: p3;
-    margin-left: 15px;
-    margin-bottom: 25px;
 }
 
 .p4 {
     grid-area: p4;
-    margin-left: 15px;
 }
 
 
@@ -210,3 +197,66 @@ section p {
     grid-area: btn2;
 }
 
+@media screen and (max-width: 700px){
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+        }
+    }
+    
+    section {
+        grid-template-columns: 85%;
+        grid-template-areas: "i"
+                             "m"
+                             "v";
+    }
+
+    .valores {
+        grid-template-columns: 85%;
+        grid-template-areas: "vt"
+                             "v1"
+                             "v2"
+                             "v3"
+                             "v4"
+                             "v5"
+                             "v6";
+    }
+
+    .vt {
+        text-align: center;
+        line-height: 0.8;
+        margin-top: 1.5rem;
+    }
+
+    .politicas-img {
+        align-items: flex-end;
+    }
+    
+    .politicas-img img{
+        width: 120%;
+    }
+    
+    .politicas {
+        grid-template-columns: 85%;
+        margin-top: 0rem;
+        grid-template-areas: "p1"
+                             "p2"
+                             "p3"
+                             "p4";
+    }
+
+    .more {
+        margin-top: 2rem;
+        justify-items: stretch;
+        grid-template-columns: 85%;
+        grid-template-areas: "h4"
+                             "btns";
+    
+        & h4 {
+            text-align: center;
+        }
+    }
+}

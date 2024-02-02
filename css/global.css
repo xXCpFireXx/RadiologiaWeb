@@ -11,6 +11,7 @@
 
 html{
     height: 100vh;
+    scrollbar-width: none;
 }
 
 body{    
@@ -175,7 +176,6 @@ header {
 
 /* Footer */
 footer{
-    width: 100%;
     display: flex;
     background: #323232;
     padding: 25px 20px;    
