@@ -128,3 +128,44 @@
 .bibliografia h4 {
     color: #000000;
 }
+
+@media screen and (max-width: 950px) {
+
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+        }
+    }
+
+    .container-carousel-out {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    
+    .btn-left,
+    .btn-right {
+    font-size: 1.5rem;
+    padding: 0px;
+    transform: translate(0,-70%);
+    }
+
+    .preparaciones {
+    grid-template-columns: 85%;
+    text-align: center;
+    }
+
+    .preparaciones iframe {
+        width:90%;
+    }
+    
+    .bibliografia {
+        grid-template-columns: 85%;
+    }
+    
+    .bibliografia cite, a{
+    font-size: small;
+    }
+
+}

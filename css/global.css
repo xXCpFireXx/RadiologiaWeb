@@ -56,9 +56,12 @@ header {
 }
 
 .nav-list li a {
+    display: block;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+
+    
 }
 
 .nav-list a:hover{
@@ -69,11 +72,50 @@ header {
     transition:all 0.3s ease;
 }
 
-.nav-list li:hover {
+.nav-list > li:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+
+    & .serv-in{
+        display: block;
+    }
+    
 }
+.serv-in {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: var(--gray-dark);
+    border-radius: 0.5rem;
+    width: 200px;
+    color: #fff;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.nav-list li:hover .serv-in{
+    display: block;    
+}
+
+.serv-in li {
+    display: block;
+    margin-top: 1rem;
+    /* font-size: 1rem; */
+}
+
+.serv-in li a{
+    width: 100%;
+    display: block;
+    position: absolute;
+    padding: 1rem;
+}
+
+.serv-in li:hover {   
+        color: var(--red);
+        cursor: pointer;
+    
+}
+
 
 /* Modal Estados Financieros*/
 #btn-modal{
@@ -301,6 +343,14 @@ footer{
 
     .nav-list li a{
         font-size: 1.5rem;
+    }
+
+    .nav-list li:hover .serv-in{
+        display: none;    
+    }
+    
+    .serv-in {
+        display: none;
     }
         
     footer{

@@ -156,9 +156,8 @@ textarea {
 @media screen and (max-width: 950px){
 
     body{
-    background-size: 100%;
+    background-size: cover;
     min-height: 100%;
-    background-repeat: no-repeat;
     }
 
     .title{

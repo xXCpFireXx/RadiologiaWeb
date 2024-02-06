@@ -34,7 +34,18 @@
           <ul class="nav-list">
             <li><a href="/index.html">INICIO</a></li>
             <li><a href="/views/AboutUs.html">NOSOTROS</a></li>
-            <li><a href="/views/Services.html">SERVICIOS</a></li>
+            <li>
+                <a href="/views/Services.html">SERVICIOS</a>
+                <ul class="serv-in">
+                  <li><a href="/views/Services/Tomografia.html"></a>Tomografía</li>
+                  <li><a href="/views/Services/RX.html"></a>RX Convencional</li>
+                  <li><a href="/views/Services/Mamografia.html"></a>Mamografía</li>
+                  <li><a href="/views/Services/Resonancia.html"></a>Resonancia</li>
+                  <li><a href="/views/Services/Ecografia.html"></a>Ecografía</li>
+                  <li><a href="/views/Services/Especiales.html"></a>Procedimientos Especiales</li>
+      
+                </ul>
+              </li>
             <li><a href="/views/Resultados.html">RESULTADOS</a></li>
             <li><a href="/views/ContactUs.html" style="color: #BD3C3C;">CONTACTO</a></li>
           </ul>
@@ -60,10 +71,7 @@
                         <select name="Motivos" id="mot" onchange="formCR()" required>
                             <option value="" selected disabled hidden>Seleciona un motivo</option>
                             <option value="CR">Cita o Resultado</option>
-                            <option value="P">Petición</option>
-                            <option value="Q">Queja</option>
-                            <option value="R">Reclamo</option>
-                            <option value="S">Sugerencia</option>
+                            <option value="PQRS">PQRS</option>
                         </select>
 
                         <div class="inputs" id="inputs">
