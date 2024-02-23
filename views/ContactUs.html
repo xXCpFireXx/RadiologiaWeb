@@ -63,32 +63,34 @@
         <div class="container-out">
             <div class="container-in">
                 <div class="formulario">
-                    <!-- <script>
-                        alert("Debes seleccionar primero un motivo");
-                        
-                    </script> -->
-                    <form https://formsubmit.co/no-responder@dptoradiologia.com" method="POST">
-                        <select name="Motivos" id="mot" onchange="formCR()" required>
-                            <option value="" selected disabled hidden>Seleciona un motivo</option>
-                            <option value="CR">Cita o Resultado</option>
-                            <option value="PQRS">PQRS</option>
-                        </select>
-
+                    <form id="ContactUsForm" action="https://script.google.com/macros/s/AKfycbwO9JHXRUm3tJbmeWzRxVCdLp_bybBgBFZUE6OfI3uF234G_jjJA5lDYo1RHaw9LFx8gw/exec" method="POST">
                         <div class="inputs" id="inputs">
-                            <input type="text" id="input-name" placeholder="Nombre completo" required="">
-                            <input type="email" id="input-email" placeholder="Correo electrónico" required="">
-                            <input type="tel" id="input-tel" placeholder="Teléfono">
-                            <div id="form2">
-                                <input type="text" id="input-asu" placeholder="Asunto" required="">
-                                <input type="number"" id=" input-cc" placeholder="Número de documento" required="">
-                                <input type="text" id="input-eps" placeholder="EPS" required="">
-                            </div>
+                            <input type="text" id="input-name" name="NombrePQRS" placeholder="Nombre quien realiza la manifestación" required>
+                            <input type="text" id="input-namepcte" name="NombrePcte" placeholder="Nombre del paciente" required>
+                            <input type="text" id="input-cc" name="Documento" placeholder="Número de identificación" required>
+                            <input type="text" id="input-eps" name="EPS" placeholder="EPS" >
+                            
+                            <select name="Servicio" id="select-service" required>                                
+                                <option value=""selected disabled hidden>Seleciona un servicio</option>
+                                <option value="Ecografía">Ecografía</option>
+                                <option value="Tomografia">Tomograía</option>
+                                <option value="Exámenes Especiales">Exámenes Especiales</option>
+                                <option value="Resonancia">Resonancia</option>
+                                <option value="Mamografía">Mamografía</option>
+                                <option value="Biopsia">Biopsia</option>
+                                <option value="Rayos X">Rayos X</option>
+                                <option value="Intervencionismo">Intervencionismo</option>
+                            </select>
+                            
+                            <input type="tel1" id="input-tel1" name="Telefono1" placeholder="Teléfono 1" required>
+                            <input type="tel2" id="input-tel2" name="Telefono2" placeholder="Teléfono 2">
+                            <input type="email" id="input-email" name="Email" placeholder="Correo electrónico" required>
                         </div>
-                        <div class="mensaje" id="mensaje">
-                            <textarea name="message" type="text" id="input-message" placeholder="Mensaje"></textarea>
+                        <div class="mensaje">
+                            <textarea name="Descripcion" type="text" id="input-message" placeholder="Descripción" required></textarea>
                         </div>
                         <div class="terms">
-                            <input type="checkbox" id="input-terms" required="">
+                            <input type="checkbox" id="input-terms" required>
                             <strong>Autorizo al Departamento de Radiología S.A al tratamiento de mis
                                 datos personales en
                                 conformidad a su Politica de Tratamiento y Protección de Datos</strong>
