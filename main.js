@@ -1,4 +1,5 @@
-//Navbar Mobile
+//--------- Barra de navegación de la versión mobile ---------------------
+//los siguientes lineas de código permite que aperezca y desaparezca el menú hamburguesa de la version mobile de la página web.
 const nav = document.querySelector("#nav");
 const open = document.querySelector("#open");
 const close = document.querySelector("#close");
@@ -11,7 +12,9 @@ close.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
 
-
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//¿Qué es ScrollReveal?
+//ScrollReveal es una librería JavaScript para animar fácilmente elementos cuando entran/salen del viewport.
 ScrollReveal().reveal('.title', {
     delay: 300,
     duration: 350,
@@ -88,7 +91,10 @@ ScrollReveal().reveal('.preparaciones h4', {
     easing: 'ease-in'
 });
 
-//Slider
+
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//Slider de cada servicio
+//Las siguientes lineas de código, permiten el funcionamiento del slider que se presenta en cada página de los servicios.
 const btnLeft = document.querySelector(".btn-left"),
       btnRight = document.querySelector(".btn-right"),
       slider = document.querySelector("#slider"),
@@ -97,10 +103,6 @@ const btnLeft = document.querySelector(".btn-left"),
 
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight())
-
-// setInterval(() => {
-//     moveToRight()
-// }, 3000);
 
 
 let operacion = 0,
@@ -133,17 +135,5 @@ function moveToLeft() {
     slider.style.transition = "all ease .6s"   
 }   
 
-
-// function formCR() {
-    
-//     var status = document.getElementById("mot"); 
-
-
-//     if (status.value == "CR") {
-//         document.getElementById("form2").style.display = "block";
-//     } else {
-//         document.getElementById("form2").style.display = "none";
-//     }
-// }
 
     

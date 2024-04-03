@@ -1,17 +1,19 @@
-// Add event listener to the form submission
-document.getElementById("ContactUsForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
+//Las siguientes líneas de código, permite enviar las respuestas del formulario de PQRS a una hoja de cálculo de Google
 
-    // Perform an AJAX request to submit the form
+//Añadir Un agente de escucha de eventos (event listener) al envío del formulario
+document.getElementById("ContactUsForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita el envío de respuestas del formulario que estan por defecto
+
+    // Realiza una petición AJAX para enviar el formulario
     var xhr = new XMLHttpRequest();
     xhr.open("POST", this.action);
     xhr.onreadystatechange = function() {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {          
-          document.getElementById("ContactUsForm").reset(); //Clear the form fields
+          document.getElementById("ContactUsForm").reset(); //Limpia los campos del formulario
         } else {
-          // Error response
-          showModal("Error: Something went wrong."); // Show a generic error message
+          // Mensaje de error
+          showModal("Error: Something went wrong."); // Muestra un mensaje de error
         }
       }
     };
