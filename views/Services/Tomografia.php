@@ -87,14 +87,32 @@ include ('conexion.php')
     <div class="preparaciones">
         <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de tomografia, lo puede hacer a
             continuación selecionando el estudio en especifico:</h4>
-
+            
+            
+    <form id="preparaciones">
+        <label for="registros">Selecciona un examen:</label>
+        <select id="registros" name="registro_id"></select>
+        <br><br>
+        <label for="texto">Campo de Texto:</label><br>
+        <textarea id="texto" name="texto" readonly></textarea>
+    </form>
 
     </div>
 
     <div class="bibliografia">
         <h4>Bibliografia</h4>
             <cite><p>Hoja informativa sobre exploraciones con tomografía computarizada (TC) para el cáncer. (2019, mayo 12).</p>Instituto Nacional del Cáncer. <a href="https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.">https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.</a></cite>
-        
+    
+    <form>
+        <label for="examen">Selecciona un examen:</label>
+        <select id="examen" onchange="mostrarPreparacion()">
+            <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+        </select>
+        <br><br>
+        <label for="preparacion">Preparación:</label><br>
+        <textarea id="preparacion" rows="4" cols="50" readonly></textarea>
+    </form>
+
     </div>
 
     <!-- Footer -->

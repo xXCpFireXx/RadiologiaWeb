@@ -91,6 +91,38 @@ ScrollReveal().reveal('.preparaciones h4', {
     easing: 'ease-in'
 });
 
+//----------------------------------------------------------------------------------------------------------------------------------------------
+// Función para cargar las opciones de la lista desplegable
+function cargarExamenes() {
+    var select = document.getElementById('examen');
+    fetch('obtener_examenes.php')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(examen => {
+            var option = document.createElement('option');
+            option.value = examen.EXACOD;
+            option.textContent = examen.EXANOM;
+            select.appendChild(option);
+        });
+    })
+    .catch(error => console.error('Error al obtener los exámenes:', error));
+}
+
+// Función para mostrar la preparación del examen seleccionado
+function mostrarPreparacion() {
+    var seleccionado = document.getElementById('examen').value;
+    fetch('obtener_preparacion.php?exacod=' + seleccionado)
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('preparacion').value = data.DESEYPDES;
+    })
+    .catch(error => console.error('Error al obtener la preparación:', error));
+}
+
+// Cargar las opciones al cargar la página
+cargarExamenes();
+
+
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 //Slider de cada servicio
