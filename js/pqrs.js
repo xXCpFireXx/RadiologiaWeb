@@ -4,6 +4,14 @@
 document.getElementById("ContactUsForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita el envío de respuestas del formulario que estan por defecto
 
+
+     // Validar reCAPTCHA
+     var recaptchaResponse = grecaptcha.getResponse();
+     if (!recaptchaResponse) {
+         showModal("Por favor, completa el reCAPTCHA.");
+         return; // Detener el envío del formulario si no se ha completado reCAPTCHA
+     }
+ 
     // Realiza una petición AJAX para enviar el formulario
     var xhr = new XMLHttpRequest();
     xhr.open("POST", this.action);
@@ -11,6 +19,7 @@ document.getElementById("ContactUsForm").addEventListener("submit", function(eve
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {          
           document.getElementById("ContactUsForm").reset(); //Limpia los campos del formulario
+          grecaptcha.reset(); // Reinicia el reCAPTCHA
         } else {
           // Mensaje de error
           showModal("Error: Something went wrong."); // Muestra un mensaje de error
