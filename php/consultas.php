@@ -1,10 +1,18 @@
 <?php
-// Conexión a la base de datos
-$conexion = mysqli_connect("localhost", "root", "", "prueba");
+// Datos de conexión a la base de datos
+$host = 'localhost';
+$usuario = 'root';
+$contrasena = '';
+$basededatos = 'prueba';
 
-// Verificar la conexión
-if (!$conexion) {
-    die("Error al conectar: " . mysqli_connect_error());
+// Intentar conectar a la base de datos
+$conexion = new mysqli($host, $usuario, $contrasena, $basededatos);
+
+    // Verificar si la conexión fue exitosa
+if ($conexion->connect_errno) {
+    $mensaje = "Error al conectar: " . $conexion->connect_errno;
+} else {
+    $mensaje = "Conexión exitosa a la base de datos";
 }
 
 // Obtener el tipo de consulta y el código del examen si es necesario
@@ -31,11 +39,6 @@ switch ($tipoConsulta) {
     default:
         echo json_encode(array('error' => 'Tipo de consulta no válido'));
         exit;
-}
-
-// Agregar condición para obtener un examen específico si se proporciona el exacod
-if ($exacod !== '') {
-    $query .= " AND EXACOD = '$exacod'";
 }
 
 // Ejecutar la consulta
