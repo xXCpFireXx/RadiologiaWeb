@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomografías</title>
+    <title>Resonancia</title>
     <link rel="icon" href="../../img/Logo.ico">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/Estudios.css" />
@@ -49,12 +49,11 @@
         </nav>
     </header>
 
-
     <div class="title">
-        <h1>Tomografías</h1>
-        <p>La tomografía computarizada, TC, es un procedimiento con imágenes que usa equipo especial de rayos X para
-            crear imágenes detalladas, o exploraciones, de regiones internas del cuerpo. A veces, también se llama
-            tomografía axial computarizada (TAC).</p>
+        <h1>Resonancia</h1>
+        <p>La resonancia magnética es una prueba diagnóstica que utiliza un campo magnético y ondas de radiofrecuencia
+            para obtener imágenes de distintas áreas del cuerpo. Se pueden obtener imágenes de alta calidad y ver las
+            alteraciones de su cuerpo sin utilizar radiaciones ionizantes (rayos X).</p>
     </div>
     <div class="container-carousel-out">
         <div class="container-carousel">
@@ -79,21 +78,18 @@
             <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
         </div>
     </div>
-
     <div class="container-out">
         <div class="container-in">
             <div class="preparaciones">
-                <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de tomografia, lo puede hacer a
+                <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de resonancia, lo puede hacer a
                     continuación selecionando el estudio en especifico:</h4>
 
                 <label for="examen">Selecciona un examen:</label>
                 <select id="examen" onchange="obtenerPreparacion()">
-                     <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+                    <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
                 </select>
                 <label for="resultado">Preparaciones:</label>
-                <textarea id="resultado" readonly></textarea>
-
-
+                <textarea id="resultado" readonly style="height: 25rem;"></textarea>
             </div>
         </div>
     </div>
@@ -101,10 +97,12 @@
     <div class="bibliografia">
         <h4>Bibliografia</h4>
         <cite>
-            <p>Hoja informativa sobre exploraciones con tomografía computarizada (TC) para el cáncer. (2019, mayo 12).
-            </p>Instituto Nacional del Cáncer. <a
-                href="https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.">https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.</a>
+            <p>Resonancia magnética. (s/f).</p>
+            https://www.cun.es.
+            <a href="https://www.cun.es/enfermedades-tratamientos/pruebas-diagnosticas/resonancia-magnetica">
+                https://www.cun.es/enfermedades-tratamientos/pruebas-diagnosticas/resonancia-magnetica</a>
         </cite>
+
     </div>
 
     <!-- Modal -->
@@ -160,7 +158,7 @@
         </div>
     </footer>
     <script src="../../main.js"></script>
-    <script src="../../js/PreparacionesJS/TomoP.js"></script>
+    <script src="../../js/PreparacionesJS/ResoP.js"></script>
 </body>
 
 </html>

@@ -88,41 +88,59 @@
 
 
 /* Preparaciones */
+.container-out {
+    display: flex;
+    justify-content: center;
+}
+.container-in {
+    display: flex;    
+    justify-content: center;
+    justify-items: center;
+    background-color: #BD3C3C;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 3rem 2rem 3rem;
+}
+
+
+
 .preparaciones {
-    margin-top: 50px;
     margin-bottom: 1rem;
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 950px;
     align-items: center;
     justify-content: center;
 }
 .preparaciones h4 {
-    color: black;
+    color: #ffffff;
 }
 
-label {
+.preparaciones label {
     font-size: 1.3rem;
     font-weight: bold;
     font-family: 'Istok Web';
     margin-top: 1rem;
+    color: #ffffff;
 }
 
 select#examen {
     border: 1px solid #908f8f;
     border-radius: 8px;
     font-family: 'Istok Web';
-    font-size: 20px;
+    font-size: 1rem;
     box-shadow: 5px 7px 5px -4px rgba(0,0,0,0.1);
     padding: 10px;
 }
 
 textarea#resultado {
-    margin-top: 1rem;
-    resize: none;
+    resize: vertical;
     border: none;
-    height: 13rem;
+    height: 18rem;   
     font-family: 'Istok Web';
     font-size: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    border-radius: 1rem;
 }
 
 .bibliografia {
@@ -170,14 +188,18 @@ textarea#resultado {
     }
 
     .preparaciones {
-    grid-template-columns: 85%;
+    grid-template-columns: 90%;
     text-align: center;
+    width: 120%;
     }
 
-    .preparaciones iframe {
-        width:90%;
+    .container-out {
+        margin: 1rem;
     }
-    
+
+    .container-in {
+        width: 100%;
+    }
     .bibliografia {
         grid-template-columns: 85%;
     }

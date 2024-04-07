@@ -1,6 +1,6 @@
 function cargarExamenes() {
     var select = document.getElementById('examen');
-    fetch('../../php/cargar_examenes_tomo.php')
+    fetch('../../php/PreparacionesPHP/cargar_examenes_mamo.php')
     .then(response => response.json())
     .then(data => {
         data.forEach(examen => {
@@ -19,7 +19,7 @@ function obtenerPreparacion() {
     var examenSeleccionado = document.getElementById('examen').value;
     // Realizar una solicitud AJAX para obtener la preparación del examen seleccionado desde PHP
     // Reemplaza 'consultar_preparacion.php' con la ruta correcta de tu archivo PHP
-    fetch('../../php/consultar_preparacion_tomo.php?examen=' + examenSeleccionado)
+    fetch('../../php/PreparacionesPHP/consultar_preparacion.php?examen=' + examenSeleccionado)
     .then(response => response.json())
     .then(data => {
         document.getElementById('resultado').value = data.DESEYPDES;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomografías</title>
+    <title>RX Convencional</title>
     <link rel="icon" href="../../img/Logo.ico">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/Estudios.css" />
@@ -49,12 +49,11 @@
         </nav>
     </header>
 
-
     <div class="title">
-        <h1>Tomografías</h1>
-        <p>La tomografía computarizada, TC, es un procedimiento con imágenes que usa equipo especial de rayos X para
-            crear imágenes detalladas, o exploraciones, de regiones internas del cuerpo. A veces, también se llama
-            tomografía axial computarizada (TAC).</p>
+        <h1>Rayos X Convencional</h1>
+        <p>Es la prueba diagnóstica que se utiliza de forma más habitual. La radiografía utiliza los rayos X un tipo de
+            radiación ionizante de alta energía que pueden traspasar el cuerpo y obtener imágenes. En el campo de la
+            medicina se usa para generar imágenes de los tejidos y otras estructuras internas del cuerpo.</p>
     </div>
     <div class="container-carousel-out">
         <div class="container-carousel">
@@ -83,16 +82,15 @@
     <div class="container-out">
         <div class="container-in">
             <div class="preparaciones">
-                <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de tomografia, lo puede hacer a
+                <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de Rayos X, lo puede hacer a
                     continuación selecionando el estudio en especifico:</h4>
-
+                
                 <label for="examen">Selecciona un examen:</label>
                 <select id="examen" onchange="obtenerPreparacion()">
-                     <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+                    <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
                 </select>
                 <label for="resultado">Preparaciones:</label>
-                <textarea id="resultado" readonly></textarea>
-
+                <textarea id="resultado" style="height: 10rem;" readonly></textarea>
 
             </div>
         </div>
@@ -101,10 +99,12 @@
     <div class="bibliografia">
         <h4>Bibliografia</h4>
         <cite>
-            <p>Hoja informativa sobre exploraciones con tomografía computarizada (TC) para el cáncer. (2019, mayo 12).
-            </p>Instituto Nacional del Cáncer. <a
-                href="https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.">https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.</a>
+            <p>Radiografía Convencional. (s/f).</p>
+            Clínic Barcelona.
+            <a href="https://www.clinicbarcelona.org/asistencia/pruebas-y-procedimientos/radiografia-convencional">
+                https://www.clinicbarcelona.org/asistencia/pruebas-y-procedimientos/radiografia-convencional</a>
         </cite>
+
     </div>
 
     <!-- Modal -->
@@ -160,7 +160,7 @@
         </div>
     </footer>
     <script src="../../main.js"></script>
-    <script src="../../js/PreparacionesJS/TomoP.js"></script>
+    <script src="../../js/PreparacionesJS/RxP.js"></script>
 </body>
 
 </html>

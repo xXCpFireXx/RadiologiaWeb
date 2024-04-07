@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomografías</title>
+    <title>Ecografía</title>
     <link rel="icon" href="../../img/Logo.ico">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/Estudios.css" />
-
     <!-- Link de fonts google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,12 +48,12 @@
         </nav>
     </header>
 
-
     <div class="title">
-        <h1>Tomografías</h1>
-        <p>La tomografía computarizada, TC, es un procedimiento con imágenes que usa equipo especial de rayos X para
-            crear imágenes detalladas, o exploraciones, de regiones internas del cuerpo. A veces, también se llama
-            tomografía axial computarizada (TAC).</p>
+        <h1>Ecografía</h1>
+        <p>La ecografía de diagnóstico, también denominada sonografía o sonografía médica de diagnóstico, es un método
+            de diagnóstico por imágenes que usa ondas de sonido para producir imágenes de las estructuras dentro del
+            cuerpo. Las imágenes pueden brindar información valiosa para el diagnóstico y tratamiento de diversas
+            enfermedades y afecciones.</p>
     </div>
     <div class="container-carousel-out">
         <div class="container-carousel">
@@ -79,32 +78,31 @@
             <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
         </div>
     </div>
-
     <div class="container-out">
         <div class="container-in">
             <div class="preparaciones">
-                <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de tomografia, lo puede hacer a
+                <h4>Si desea conocer a mas a detalle las preparaciones según el tipo de ecografía, lo puede hacer a
                     continuación selecionando el estudio en especifico:</h4>
 
                 <label for="examen">Selecciona un examen:</label>
                 <select id="examen" onchange="obtenerPreparacion()">
-                     <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+                    <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
                 </select>
                 <label for="resultado">Preparaciones:</label>
                 <textarea id="resultado" readonly></textarea>
 
-
             </div>
         </div>
     </div>
-
     <div class="bibliografia">
         <h4>Bibliografia</h4>
         <cite>
-            <p>Hoja informativa sobre exploraciones con tomografía computarizada (TC) para el cáncer. (2019, mayo 12).
-            </p>Instituto Nacional del Cáncer. <a
-                href="https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.">https://www.cancer.gov/espanol/cancer/diagnostico-estadificacion/hoja-informativa-tomografia-computarizada.</a>
+            <p>Ecografía. (2022, junio 11).</p>
+            Mayoclinic.org.
+            <a href="https://www.mayoclinic.org/es-es/tests-procedures/ultrasound/about/pac-20395177">
+                https://www.mayoclinic.org/es-es/tests-procedures/ultrasound/about/pac-20395177</a>
         </cite>
+
     </div>
 
     <!-- Modal -->
@@ -160,7 +158,7 @@
         </div>
     </footer>
     <script src="../../main.js"></script>
-    <script src="../../js/PreparacionesJS/TomoP.js"></script>
+    <script src="../../js/PreparacionesJS/EcoP.js"></script>
 </body>
 
 </html>

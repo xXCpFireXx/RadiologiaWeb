@@ -1,7 +1,6 @@
 <?php
 // // Conexión a la base de datos
-include 'conexion.php';
-// $conexion = mysqli_connect("localhost", "tu_usuario", "tu_contraseña", "tu_base_de_datos");
+include '../conexion.php';
 
 // Verificar la conexión
 if (!$conexion) {
@@ -9,7 +8,7 @@ if (!$conexion) {
 }
 
 // Consulta para obtener los exámenes
-$query = "SELECT EXACOD, EXANOM FROM preparaciones WHERE exanom LIKE 'ANGIOTAC%' OR exanom LIKE '%UROTOMOGRA%' OR exanom LIKE 'TAC%' OR exanom LIKE 'TC%' OR exanom LIKE '%ANGIOTC%'";
+$query = "SELECT EXACOD, EXANOM FROM preparaciones WHERE exanom LIKE 'RMN%' OR exanom LIKE '%SONANCIA%' OR exanom LIKE 'ANGIORESONANCIA%'";
 $resultado = mysqli_query($conexion, $query);
 
 if (!$resultado) {

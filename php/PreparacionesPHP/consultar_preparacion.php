@@ -1,6 +1,6 @@
 <?php
 
-include 'conexion.php';
+include '../conexion.php';
 
 // Verificar la conexión
 if (!$conexion) {
