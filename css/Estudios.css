@@ -1,3 +1,7 @@
+body{
+    scrollbar-width: none;
+}
+
 
 .title{
     display: grid;
