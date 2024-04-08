@@ -2,6 +2,10 @@ body{
     scrollbar-width: none;
 }
 
+html{
+    scrollbar-width: none;
+}
+
 
 .title{
     display: grid;
