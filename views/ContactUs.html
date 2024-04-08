@@ -29,31 +29,31 @@
 
     <!--Navbar-->
     <header>
-        <a href="../index.html"><img class="img-navbar" src="../img/Logo.png" alt="Logo"/></a>
+        <a href="../index.html"><img class="img-navbar" src="../img/Logo.png" alt="Logo" /></a>
         <button id="open" class="open-nav"><i class='bx bx-menu'></i></button>
-    
+
         <nav class="nav" id="nav">
-          <button id="close" class="close-nav"><i class='bx bx-x'></i></button>
-          <ul class="nav-list">
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="AboutUs.html">NOSOTROS</a></li>
-            <li>
-                <a href="Services.html">SERVICIOS</a>
-                <ul class="serv-in">
-                  <li><a href="./Services/Tomografia.html"></a>Tomografía</li>
-                  <li><a href="./Services/RX.html"></a>RX Convencional</li>
-                  <li><a href="./Services/Mamografia.html"></a>Mamografía</li>
-                  <li><a href="./Services/Resonancia.html"></a>Resonancia</li>
-                  <li><a href="./Services/Ecografia.html"></a>Ecografía</li>
-                  <li><a href="./Services/Especiales.html"></a>Procedimientos Especiales</li>
-      
-                </ul>
-              </li>
-            <li><a href="Resultados.html">RESULTADOS</a></li>
-            <li><a href="ContactUs.html" style="color: #BD3C3C;">CONTACTO</a></li>
-          </ul>
+            <button id="close" class="close-nav"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="AboutUs.html">NOSOTROS</a></li>
+                <li>
+                    <a href="Services.html">SERVICIOS</a>
+                    <ul class="serv-in">
+                        <li><a href="./Services/Tomografia.html"></a>Tomografía</li>
+                        <li><a href="./Services/RX.html"></a>RX Convencional</li>
+                        <li><a href="./Services/Mamografia.html"></a>Mamografía</li>
+                        <li><a href="./Services/Resonancia.html"></a>Resonancia</li>
+                        <li><a href="./Services/Ecografia.html"></a>Ecografía</li>
+                        <li><a href="./Services/Especiales.html"></a>Procedimientos Especiales</li>
+
+                    </ul>
+                </li>
+                <li><a href="Resultados.html">RESULTADOS</a></li>
+                <li><a href="ContactUs.html" style="color: #BD3C3C;">CONTACTO</a></li>
+            </ul>
         </nav>
-      </header> 
+    </header>
 
 
     <body>
@@ -66,15 +66,20 @@
         <div class="container-out">
             <div class="container-in">
                 <div class="formulario">
-                    <form id="ContactUsForm" action="https://script.google.com/macros/s/AKfycbwO9JHXRUm3tJbmeWzRxVCdLp_bybBgBFZUE6OfI3uF234G_jjJA5lDYo1RHaw9LFx8gw/exec" method="POST">
+                    <form id="ContactUsForm"
+                        action="https://script.google.com/macros/s/AKfycbwO9JHXRUm3tJbmeWzRxVCdLp_bybBgBFZUE6OfI3uF234G_jjJA5lDYo1RHaw9LFx8gw/exec"
+                        method="POST">
                         <div class="inputs" id="inputs">
-                            <input type="text" id="input-name" name="NombrePQRS" placeholder="Nombre quien realiza la manifestación" required>
-                            <input type="text" id="input-namepcte" name="NombrePcte" placeholder="Nombre del paciente" required>
-                            <input type="text" id="input-cc" name="Documento" placeholder="Número de identificación" required>
-                            <input type="text" id="input-eps" name="EPS" placeholder="EPS" >
-                            
-                            <select name="Servicio" id="select-service" required>                                
-                                <option value=""selected disabled hidden>Seleciona un servicio</option>
+                            <input type="text" id="input-name" name="NombrePQRS"
+                                placeholder="Nombre quien realiza la manifestación" required>
+                            <input type="text" id="input-namepcte" name="NombrePcte" placeholder="Nombre del paciente"
+                                required>
+                            <input type="text" id="input-cc" name="Documento" placeholder="Número de identificación"
+                                required>
+                            <input type="text" id="input-eps" name="EPS" placeholder="EPS">
+
+                            <select name="Servicio" id="select-service" required>
+                                <option value="" selected disabled hidden>Seleciona un servicio</option>
                                 <option value="Ecografía">Ecografía</option>
                                 <option value="Tomografia">Tomografía</option>
                                 <option value="Exámenes Especiales">Exámenes Especiales</option>
@@ -84,21 +89,23 @@
                                 <option value="Rayos X">Rayos X</option>
                                 <option value="Intervencionismo">Intervencionismo</option>
                             </select>
-                            
+
                             <input type="tel1" id="input-tel1" name="Telefono1" placeholder="Teléfono 1" required>
                             <input type="tel2" id="input-tel2" name="Telefono2" placeholder="Teléfono 2">
                             <input type="email" id="input-email" name="Email" placeholder="Correo electrónico" required>
                         </div>
                         <div class="mensaje">
-                            <textarea name="Descripcion" type="text" id="input-message" placeholder="Descripción" required></textarea>
+                            <textarea name="Descripcion" type="text" id="input-message" placeholder="Descripción"
+                                required></textarea>
                         </div>
                         <div class="terms">
                             <input type="checkbox" id="input-terms" required>
                             <strong>Autorizo al Departamento de Radiología S.A al tratamiento de mis
                                 datos personales en
                                 conformidad a su Politica de Tratamiento y Protección de Datos</strong>
-                            </div>
-                            <div class="g-recaptcha" id="captcha" data-sitekey="6LcNkq8pAAAAAKXCnmwB8RXBsn4KB4KpHr55F_EE"></div>
+                        </div>
+                        <div class="g-recaptcha" id="captcha" data-sitekey="6LcNkq8pAAAAAKXCnmwB8RXBsn4KB4KpHr55F_EE">
+                        </div>
 
                         <div class="btn-form">
                             <input type="submit" value="Enviar" />
@@ -118,9 +125,8 @@
                 </div>
             </div>
         </div>
-
-
-        <br><br><br>
+<br><br><br>
+         
         <!-- Modal -->
         <input type="checkbox" id="btn-modal">
         <div class="modal-container">
