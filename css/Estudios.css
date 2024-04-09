@@ -1,3 +1,4 @@
+/* Eliminar las barras de desplazamiento en el cuerpo y el HTML */
 body{
     scrollbar-width: none;
 }
@@ -6,10 +7,10 @@ html{
     scrollbar-width: none;
 }
 
-
+/* Estilos para la sección de título */
 .title{
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 1000px; /* Columna de 1000px */
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
@@ -17,18 +18,18 @@ html{
 }
 
 .title h1 {
-    color: #000000; 
+    color: #000000; /* Color del texto */
     font-size: 60px;
     text-align: center;
 }
 
 .title p {
-    color: #000000;
-    text-align:justify;
+    color: #000000; /* Color del texto */
+    text-align:justify; /* Alineación justificada */
     font-size: 20px;
 }
 
-/* Slider */
+/* Estilos para el carrusel */
 .container-carousel-out {
     display: flex;
     justify-content: center;
@@ -36,24 +37,24 @@ html{
 
 .container-carousel {
     position: relative;
-    width: 1000px;
+    width: 1000px; /* Ancho del carrusel */
     height: 100%;
     border-radius: 15px;
     overflow: hidden;
-    border:1px solid #BD3C3C;
+    border:1px solid #BD3C3C; /* Borde del carrusel */
 }
 
 .carruseles {
-    width: 400%;
+    width: 400%; /* Ancho total del contenido del carrusel */
     height: 100%;
     display: flex;
     border: 2px black;
 }
 
 .slider-section {
-    width: calc(100% / 4);
+    width: calc(100% / 4); /* Ancho de cada sección del carrusel */
     height: 100%;
-    border: 2px#000000;
+    border: 2px #000000; /* Borde de cada sección */
 }
 
 .slider-section img {
@@ -81,8 +82,8 @@ html{
 
 .btn-left:hover,
 .btn-right:hover {
-    background-color: #BD3C3C;
-    color: #ffffff;
+    background-color: #BD3C3C; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
 }
 
 .btn-left {
@@ -93,34 +94,35 @@ html{
     right: 5px;
 }
 
-
-
-/* Preparaciones */
+/* Estilos para otras secciones */
 .container-out {
     display: flex;
     justify-content: center;
 }
+
 .container-in {
     display: flex;    
     justify-content: center;
     justify-items: center;
-    background-color: #BD3C3C;
+    background-color: #BD3C3C; /* Color de fondo */
     border-radius: 20px;
     padding: 2rem;
-    margin: 2rem 3rem 2rem 3rem;
+    margin: 2rem 3rem 2rem 3rem; /* Márgenes */
 }
 
-
-
+/* Estilos para la sección de preparaciones */
 .preparaciones {
     margin-bottom: 1rem;
     display: grid;
-    grid-template-columns: 950px;
+    grid-template-columns: 950px; /* Columna de 950px */
     align-items: center;
     justify-content: center;
 }
+
 .preparaciones h4 {
-    color: #ffffff;
+    color: #ffffff; /* Color del texto */
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .preparaciones label {
@@ -128,7 +130,7 @@ html{
     font-weight: bold;
     font-family: 'Istok Web';
     margin-top: 1rem;
-    color: #ffffff;
+    color: #ffffff; /* Color del texto */
 }
 
 select#examen {
@@ -151,34 +153,35 @@ textarea#resultado {
     border-radius: 1rem;
 }
 
+/* Estilos para la sección de bibliografía */
 .bibliografia {
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 1000px; /* Columna de 1000px */
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
 
 .bibliografia p{
-    color: #8f8f8f;
+    color: #8f8f8f; /* Color del texto */
     font-style: normal;
 
 }
 
 .bibliografia cite, a{
-    color: #8f8f8f;
+    color: #8f8f8f; /* Color del texto */
 }
 
 .bibliografia h4 {
-    color: #000000;
+    color: #000000; /* Color del texto */
 }
 
-
+/* Media query para pantallas pequeñas */
 @media screen and (max-width: 950px) {
 
     .title{
-        grid-template-columns: 85%;
-
+        grid-template-columns: 85%; /* Columna de 85% del ancho */
+        
         & h1 {
             margin-bottom: 1rem;
             font-size: 2.8rem;
@@ -186,35 +189,35 @@ textarea#resultado {
     }
 
     .container-carousel-out {
-        margin: 0rem 1rem 0rem 1rem;
+        margin: 0rem 1rem 0rem 1rem; /* Márgenes */
     }
     
     .btn-left,
     .btn-right {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Tamaño de fuente */
     padding: 0px;
     transform: translate(0,-70%);
     }
 
     .preparaciones {
-    grid-template-columns: 90%;
+    grid-template-columns: 90%; /* Columna de 90% del ancho */
     text-align: center;
-    width: 120%;
+    width: 120%; /* Ancho del contenido */
     }
 
     .container-out {
-        margin: 1rem;
+        margin: 1rem; /* Márgenes */
     }
 
     .container-in {
-        width: 100%;
+        width: 100%; /* Ancho del contenedor */
     }
     .bibliografia {
-        grid-template-columns: 85%;
+        grid-template-columns: 85%; /* Columna de 85% del ancho */
     }
     
     .bibliografia cite, a{
-    font-size: small;
+    font-size: small; /* Tamaño de fuente pequeño */
     }
 
 }

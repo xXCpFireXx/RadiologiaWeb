@@ -7,7 +7,7 @@ if (!$conexion) {
 }
 
 // Obtener los exámenes agrupados por categoría
-$query = "SELECT EXACOD, EXANOM, DESEYPDES FROM preparaciones";
+$query = "SELECT EXACOD, EXANOM, DESEYPDES FROM $tabla";
 $resultado = mysqli_query($conexion, $query);
 
 if (!$resultado) {

@@ -8,7 +8,7 @@ if (!$conexion) {
 }
 
 // Consulta para obtener los exámenes
-$query = "SELECT EXACOD, EXANOM FROM preparaciones WHERE exanom LIKE '%ECOGRAFIA%' OR exanom LIKE '%ULTRASONOGRAFIA%'";
+$query = "SELECT EXACOD, EXANOM FROM $tabla WHERE exanom LIKE '%ECOGRAFIA%' OR exanom LIKE '%ULTRASONOGRAFIA%'";
 $resultado = mysqli_query($conexion, $query);
 
 if (!$resultado) {

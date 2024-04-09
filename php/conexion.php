@@ -4,6 +4,7 @@ $host = 'localhost';
 $usuario = 'root';
 $contrasena = '';
 $basededatos = 'prueba';
+$tabla = 'preparaciones';
 
 // Conexión a la base de datos
 $conexion = new mysqli($host, $usuario, $contrasena, $basededatos);

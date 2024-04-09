@@ -11,7 +11,7 @@ if (!$conexion) {
 $examen = mysqli_real_escape_string($conexion, $_GET['examen']);
 
 // Consulta preparada para obtener la preparación del examen seleccionado
-$query = "SELECT DESEYPDES FROM preparaciones WHERE EXACOD = ?";
+$query = "SELECT DESEYPDES FROM $tabla WHERE EXACOD = ?";
 $stmt = mysqli_prepare($conexion, $query);
 
 // Vincular parámetros

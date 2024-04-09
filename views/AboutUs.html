@@ -2,38 +2,45 @@
 <html lang="es">
 
 <head>
+  <!-- Metadatos para el navegador y configuración de la página -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#323232">
   <title>Sobre Nosotros</title>
   <link rel="icon" href="../img/Logo.ico" />
+  <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/AboutUs.css" />
 
-  <!--=============== fonts google ===============-->
+  <!-- Fuentes de Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!--=============== BoxIcons ===============-->
+  <!-- Iconos de BoxIcons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-  <!--=============== Scroll Reveal ===============-->
+  <!-- Scroll Reveal para efectos de desplazamiento -->
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-  <!--Navbar-->
+  <!-- Barra de navegación -->
   <header>
+    <!-- Logo y botón para abrir el menú -->
     <a href="../index.html"><img class="img-navbar" src="../img/Logo.png" alt="Logo" /></a>
     <button id="open" class="open-nav"><i class='bx bx-menu'></i></button>
 
+    <!-- Menú de navegación -->
     <nav class="nav" id="nav">
+      <!-- Botón para cerrar el menú -->
       <button id="close" class="close-nav"><i class='bx bx-x'></i></button>
+      <!-- Lista de enlaces -->
       <ul class="nav-list">
         <li><a href="../index.html">INICIO</a></li>
         <li><a href="AboutUs.html" style="color: #BD3C3C;">NOSOTROS</a></li>
 
+        <!-- Submenú de Servicios -->
         <li>
           <a href="Services.html">SERVICIOS</a>
           <ul class="serv-in">
@@ -51,11 +58,11 @@
         <li><a href="ContactUs.html">CONTACTO</a></li>
       </ul>
     </nav>
-  </header> 
+  </header>
 
-  <!-- Body -->
-
+  <!-- Contenido principal -->
   <div class="title">
+    <!-- Título y descripción -->
     <h1>Sobre Nosotros</h1>
     <p>
       Con orgullo y dedicación, llevamos 40 años prestando servicios de
@@ -66,8 +73,10 @@
     </p>
   </div>
 
+  <!-- Sección de Misión y Visión -->
   <section>
     <div class="mision">
+      <!-- Título y descripción de la misión -->
       <h1>Misión</h1>
       <p>
         El Departamento de Radiología S.A., presta servicios en Imagenología
@@ -81,6 +90,7 @@
     </div>
 
     <div class="vision">
+      <!-- Título y descripción de la visión -->
       <h1>Visión</h1>
       <p>
         Nuestra visión es ser reconocidos como una institución líder en
@@ -93,14 +103,17 @@
       </p>
     </div>
 
+    <!-- Imagen de los 40 años -->
     <div class="img-40">
       <img src="../img/40_radio.JPG" alt="" />
     </div>
   </section>
 
+  <!-- Valores corporativos -->
   <div class="valores">
     <h1 class="vt">Valores corporativos</h1>
 
+    <!-- Lista de valores con descripciones -->
     <div class="v1">
       <h1>Calidez</h1>
       <p>
@@ -151,11 +164,14 @@
     </div>
   </div>
 
+  <!-- Imagen de políticas institucionales -->
   <div class="politicas-img">
     <img src="../img/Group 11.png" alt="Políticas institucionales" />
   </div>
 
+  <!-- Políticas institucionales -->
   <div class="politicas">
+
     <div class="p1">
       <h1>Política de Seguridad del Paciente</h1>
       <p>
@@ -192,17 +208,21 @@
     </div>
   </div>
 
+  <!-- Botones adicionales -->
   <div class="more">
     <h4>Conoce más de nuestra empresa</h4>
     <div class="btn-more">
-      <a href="https://drive.google.com/file/d/1hY3jBKpoZDsw011dfGGbHjEWDbGfkEbV/view" target="_blank"><button class="btn1">ORGANIGRAMA</button></a>
-      <a href="https://drive.google.com/file/d/1l37i60T1YoxFbZwwt8Fo5B4AlR1_DSch/view" target="_blank"><button class="btn2">MAPA DE PROCESOS</button></a>
+      <a href="https://drive.google.com/file/d/1hY3jBKpoZDsw011dfGGbHjEWDbGfkEbV/view" target="_blank"><button
+          class="btn1">ORGANIGRAMA</button></a>
+      <a href="https://drive.google.com/file/d/1l37i60T1YoxFbZwwt8Fo5B4AlR1_DSch/view" target="_blank"><button
+          class="btn2">MAPA DE PROCESOS</button></a>
     </div>
   </div>
 
   <br /><br /><br />
 
   <!-- Modal -->
+  <!-- Modal para visualizar estados financieros -->
   <input type="checkbox" id="btn-modal">
   <div class="modal-container">
     <div class="modal-content">
@@ -210,6 +230,7 @@
         <label for="btn-modal"><i class='bx bx-x'></i></label>
       </div>
 
+      <!-- Título del modal -->
       <h1 class="modal__title">Estados Financieros 2022</h1>
 
       <div class="btns-modal">
@@ -226,26 +247,29 @@
           target="_blank"><button>Estado de Flujo Efectivo Método Indirecto</button></a>
       </div>
     </div>
+    <!-- Botón para cerrar el modal -->
     <label for="btn-modal" class="cerrar"></label>
   </div>
 
   <!-- Footer -->
+  <!-- Pie de página con información de contacto y enlaces -->
   <footer>
+    <!-- Logo y enlaces adicionales -->
     <div class="img-salud">
       <img src="../img/logo-supersaludblanco.png" alt="Logo_Supersalud">
     </div>
 
+    <!-- Información de contacto y enlaces -->
     <div class="bloque2">
       <h4>Correo electrónico</h4>
       <a href="mailto:calidad@dptoradiologia.com" target="_blank">calidad@dptoradiologia.com</a>
       <br>
       <h4>Dirección</h4>
       <a href="https://maps.app.goo.gl/pJuejCYB29dg3StD9" target="_blank">Edificio La Palencia. Cra. 46 # 50-28, La
-        Candelaria,
-        Medellín.</a>
+        Candelaria, Medellín.</a>
     </div>
-
     <div class="bloque3">
+      <!-- Enlaces adicionales -->
       <a href="https://drive.google.com/file/d/1d_zIxSml613T6C6upveJeQ0q4KySRdfW/view" target="_blank">Política de
         Tratamiento y Protección de Datos.</a>
       <label for="btn-modal">Estados Financieros 2022</label>
@@ -254,7 +278,8 @@
         target="_blank">Intranet</a>
     </div>
   </footer>
-   <script src="../main.js"></script>
+  <!-- Archivo JavaScript principal -->
+  <script src="../main.js"></script>
 
 </body>
 
