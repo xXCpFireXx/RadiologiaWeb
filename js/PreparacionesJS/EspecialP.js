@@ -3,12 +3,21 @@ function cargarExamenes() {
     fetch('../../php/PreparacionesPHP/cargar_examenes_especial.php')
     .then(response => response.json())
     .then(data => {
-        data.forEach(examen => {
-            var option = document.createElement('option');
-            option.value = examen.EXACOD;
-            option.textContent = examen.EXANOM;
-            select.appendChild(option);
-        });
+        for (const categoria in data) {
+            if (data.hasOwnProperty(categoria)) {
+                const optgroup = document.createElement('optgroup');
+                optgroup.label = categoria;
+
+                data[categoria].forEach(examen => {
+                    var option = document.createElement('option');
+                    option.value = examen.exacod;
+                    option.textContent = examen.exanom;
+                    optgroup.appendChild(option);
+                });
+
+                select.appendChild(optgroup);
+            }
+        }
         // Después de cargar los exámenes, puedes obtener la preparación del primer examen automáticamente
         obtenerPreparacion();
     })
@@ -31,5 +40,8 @@ function obtenerPreparacion() {
 document.addEventListener('DOMContentLoaded', function() {
     cargarExamenes();
 });
+
+// Agregar un listener al select para actualizar la preparación al seleccionar un examen diferente
+document.getElementById('selectPreparaciones').addEventListener('change', obtenerPreparacion);
 
 

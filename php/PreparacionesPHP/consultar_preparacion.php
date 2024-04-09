@@ -1,5 +1,5 @@
 <?php
-
+// Incluir el archivo de conexión a la base de datos
 include '../conexion.php';
 
 // Verificar la conexión
@@ -7,23 +7,29 @@ if (!$conexion) {
     die("Error al conectar a la base de datos: " . mysqli_connect_error());
 }
 
-// Obtener el examen seleccionado desde la solicitud GET
-$examen = $_GET['examen'];
+// Obtener el examen seleccionado desde la solicitud GET (proteger contra inyección SQL)
+$examen = mysqli_real_escape_string($conexion, $_GET['examen']);
 
-// Consulta para obtener la preparación del examen seleccionado
-$query = "SELECT DESEYPDES FROM preparaciones WHERE EXACOD = '$examen'";
-$resultado = mysqli_query($conexion, $query);
+// Consulta preparada para obtener la preparación del examen seleccionado
+$query = "SELECT DESEYPDES FROM preparaciones WHERE EXACOD = ?";
+$stmt = mysqli_prepare($conexion, $query);
 
-if (!$resultado) {
-    die("Error al obtener la preparación: " . mysqli_error($conexion));
-}
+// Vincular parámetros
+mysqli_stmt_bind_param($stmt, "s", $examen);
 
-// Obtener la preparación como un array asociativo
-$preparacion = mysqli_fetch_assoc($resultado);
+// Ejecutar la consulta
+mysqli_stmt_execute($stmt);
 
-// Cerrar la conexión
+// Obtener el resultado de la consulta
+mysqli_stmt_bind_result($stmt, $preparacion);
+
+// Obtener el valor de la preparación
+mysqli_stmt_fetch($stmt);
+
+// Cerrar la consulta preparada y la conexión
+mysqli_stmt_close($stmt);
 mysqli_close($conexion);
 
 // Devolver la preparación como JSON
-echo json_encode($preparacion);
+echo json_encode(array('DESEYPDES' => $preparacion));
 ?>
