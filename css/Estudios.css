@@ -1,3 +1,11 @@
+body{
+    scrollbar-width: none;
+}
+
+html{
+    scrollbar-width: none;
+}
+
 
 .title{
     display: grid;
@@ -36,14 +44,14 @@
 }
 
 .carruseles {
-    width: 500%;
+    width: 400%;
     height: 100%;
     display: flex;
     border: 2px black;
 }
 
 .slider-section {
-    width: calc(100% / 5);
+    width: calc(100% / 4);
     height: 100%;
     border: 2px#000000;
 }
@@ -88,28 +96,64 @@
 
 
 /* Preparaciones */
+.container-out {
+    display: flex;
+    justify-content: center;
+}
+.container-in {
+    display: flex;    
+    justify-content: center;
+    justify-items: center;
+    background-color: #BD3C3C;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 3rem 2rem 3rem;
+}
+
+
+
 .preparaciones {
-    margin-top: 50px;
+    margin-bottom: 1rem;
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 950px;
     align-items: center;
     justify-content: center;
 }
 .preparaciones h4 {
-    color: black;
+    color: #ffffff;
 }
 
-.preparaciones iframe {
-    width: 1000px;
-    margin-left: 30px;
-    height: 1050px;
-    border-radius: 20px;
-    border-style: none;
+.preparaciones label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Istok Web';
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+select#examen {
+    border: 1px solid #908f8f;
+    border-radius: 8px;
+    font-family: 'Istok Web';
+    font-size: 1rem;
+    box-shadow: 5px 7px 5px -4px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+textarea#resultado {
+    resize: vertical;
+    border: none;
+    height: 18rem;   
+    font-family: 'Istok Web';
+    font-size: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    border-radius: 1rem;
 }
 
 .bibliografia {
     display: grid;
-    grid-template-columns: 900px;
+    grid-template-columns: 1000px;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
@@ -128,6 +172,7 @@
 .bibliografia h4 {
     color: #000000;
 }
+
 
 @media screen and (max-width: 950px) {
 
@@ -152,14 +197,18 @@
     }
 
     .preparaciones {
-    grid-template-columns: 85%;
+    grid-template-columns: 90%;
     text-align: center;
+    width: 120%;
     }
 
-    .preparaciones iframe {
-        width:90%;
+    .container-out {
+        margin: 1rem;
     }
-    
+
+    .container-in {
+        width: 100%;
+    }
     .bibliografia {
         grid-template-columns: 85%;
     }

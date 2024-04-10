@@ -91,7 +91,6 @@ ScrollReveal().reveal('.preparaciones h4', {
     easing: 'ease-in'
 });
 
-
 //----------------------------------------------------------------------------------------------------------------------------------------------
 //Slider de cada servicio
 //Las siguientes lineas de código, permiten el funcionamiento del slider que se presenta en cada página de los servicios.
