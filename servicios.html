@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#323232">
+  <title>Servicios</title>
+  <link rel="icon" href="./img/Logo.ico">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/Services.css" />
+
+  <!--=============== fonts google ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!--=============== BoxIcons ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--=============== Scroll Reveal ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <header>
+    <a href="./index"><img class="img-navbar" src="./img/Logo.png" alt="Logo"/></a>
+    <button id="open" class="open-nav"><i class='bx bx-menu'></i></button>
+
+    <nav class="nav" id="nav">
+      <button id="close" class="close-nav"><i class='bx bx-x'></i></button>
+      <ul class="nav-list">
+        <li><a href="index">INICIO</a></li>
+        <li><a href="nosotros">NOSOTROS</a></li>
+        <li>
+          <a href="servicios.html" style="color: #BD3C3C;">SERVICIOS</a>
+          <ul class="serv-in">
+            <!-- Submenú de servicios -->
+            <li><a href="./servicios/Tomografia"></a>Tomografía</li>
+            <li><a href="./servicios/RX"></a>RX Convencional</li>
+            <li><a href="./servicios/Mamografia"></a>Mamografía</li>
+            <li><a href="./servicios/Resonancia"></a>Resonancia</li>
+            <li><a href="./servicios/Ecografia"></a>Ecografía</li>
+            <li><a href="./servicios/Especiales"></a>Procedimientos Especiales</li>
+          </ul>
+        </li>
+        <li><a href="resultados">RESULTADOS</a></li>
+        <li><a href="contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <body>
+    <div class="title">
+      <h1>Nuestros Servicios</h1>
+    </div>
+
+    <div class="serv">
+      <div class="sect">
+        <div class="s1">
+          <h2>Tomografía</h2>
+          <a href="./servicios/Tomografia"><img src="./img/TOMO.png" alt="Tomografía"></a>
+        </div>
+        <div class="s2">
+          <h2>RX Convencional</h2>
+          <a href="./servicios/RX"><img loading="lazy" src="./img/RX.png" alt="RX Convencional"></a>
+        </div>
+        <div class="s3">
+          <h2>Mamografía</h2>
+          <a href="./servicios/Mamografia"><img loading="lazy" src="./img/mamo.jpg" alt="Mamografía"></a>
+        </div>
+        <div class="s4">
+          <h2>Resonancia</h2>
+          <a href="./servicios/Resonancia"><img loading="lazy" src="./img/RESO.png" alt="Resonancia"></a>
+        </div>
+        <div class="s5">
+          <h2>Ecografía</h2>
+          <a href="./servicios/Ecografia"> <img loading="lazy" src="./img/ECO.png" alt="Ecografía"></a>
+        </div>
+        <div class="s6">
+          <h2 style="font-size: 23px;">Procedimientos Especiales</h2>
+          <a href="./servicios/Especiales"><img loading="lazy" src="./img/ARC-C.jpeg"
+              alt="Procedimientos Especiales"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <input type="checkbox" id="btn-modal">
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="modal__close close-modal" title="Close">
+          <label for="btn-modal"><i class='bx bx-x'></i></label>
+        </div>
+
+        <h1 class="modal__title">Estados Financieros 2022</h1>
+
+        <div class="btns-modal">
+          <a href="https://drive.google.com/file/d/1d6ZkG7yOf5IR-y8Iu-x-vf2jvO_kSvXj/view"
+            target="_blank"><button>Estado
+              de Resultado Integral</button></a>
+          <a href="https://drive.google.com/file/d/1e6SeNNGG1MhlmBaMSCf5fnHp5H5Prb-3/view?usp=sharing"
+            target="_blank"><button>Notas a los Estados Financieros</button></a>
+          <a href="https://drive.google.com/file/d/1KN6vP0bqa8XkD6Qt5RQ05qvtwgZTBFKW/view"
+            target="_blank"><button>Estado de Cambio en el Patrimonio</button></a>
+          <a href="https://drive.google.com/file/d/1HYurQ6ZGpRLZ7_7yqJa5aWesZIoZ9yqF/view?usp=sharing"
+            target="_blank"><button>Estado de la Situación Financiera
+              Individual</button></a>
+          <a href="https://drive.google.com/file/d/17DlxycFD0DERkA0OfiCmlI5agG7kVxM-/view?usp=sharing"
+            target="_blank"><button>Estado de Flujo Efectivo Método Indirecto</button></a>
+        </div>
+      </div>
+      <label for="btn-modal" class="cerrar"></label>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="img-salud">
+        <img src="./img/logo-supersaludblanco.png" alt="Logo_Supersalud">
+      </div>
+
+      <div class="bloque2">
+        <h4>Correo electrónico</h4>
+        <a href="mailto:calidad@dptoradiologia.com" target="_blank">calidad@dptoradiologia.com</a>
+        <br>
+        <h4>Dirección</h4>
+        <a href="https://maps.app.goo.gl/pJuejCYB29dg3StD9" target="_blank">Edificio La Palencia. Cra. 46 # 50-28, La
+          Candelaria,
+          Medellín.</a>
+      </div>
+
+      <div class="bloque3">
+        <a href="https://drive.google.com/file/d/1d_zIxSml613T6C6upveJeQ0q4KySRdfW/view" target="_blank">Política de
+          Tratamiento y Protección de Datos.</a>
+        <label for="btn-modal">Estados Financieros 2022</label>
+        <a href="contacto">PQRS</a>
+        <a href="https://sites.google.com/dptoradiologia.com/intranet/" style="color: rgb(235, 99, 99)"
+          target="_blank">Intranet</a>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+
+</html>

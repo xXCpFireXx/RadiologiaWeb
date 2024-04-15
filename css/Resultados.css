@@ -1,0 +1,159 @@
+.title{
+    display: grid;
+    grid-template-columns: 900px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+.title h1 {
+    color: #A01027; 
+    font-size: 50px;
+    text-align: center;
+}
+
+.title p {
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.video1, .video3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video1 iframe{
+    width:900px;
+    height: 506px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-portal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-portal button {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    border-radius: 15px;
+    border: none;   
+    width: 900px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    transition:all 0.3s ease;
+}
+
+.btn-portal button:hover{
+    background-color: #9b0e0e;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.video2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.video2 iframe{
+    width:900px;
+    height: 506px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+
+
+.video3 iframe{
+    width:900px;
+    height: 506px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.btn-portal2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-portal2 button {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    border-radius: 15px;
+    border: none;   
+    width: 600px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.btn-portal2 button:hover{
+    background-color: #9b0e0e;
+}
+
+
+
+@media screen and (max-width: 950px){
+
+    
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+    }
+
+
+    .video1, .video2, .video3 {
+        text-align: center;
+        width: 100%;
+        margin-top: 0.5rem;
+
+        & iframe {
+            width:90%;
+            height: 300px;
+            
+        }
+    }
+
+    .btn-portal, .btn-portal2 {
+        width: 100%;
+        padding: 1rem;
+        
+
+        & button {
+            width: 100%;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    
+}

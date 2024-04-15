@@ -1,0 +1,287 @@
+
+
+/*Body*/
+.title{
+    display: grid;
+    grid-template-columns: 900px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+.title h1 {
+    color: #A01027; 
+    font-size: 50px;
+    text-align: center;
+}
+
+.title p {
+    color: #000000;
+    text-align: justify;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 500px 400px;
+    justify-content: center;
+    grid-template-areas: "m  i"
+                         "v  i";
+}
+
+section h1 {
+    color: #A01027;
+    font-size: 50px;
+}
+
+section p {
+    color: #000000;
+    text-align: justify;
+}
+
+.img-40 img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.img-40 {
+    grid-area: i;
+}
+
+.mision {
+    grid-area: m;
+}
+
+.vision {
+    grid-area: v;
+}
+
+.valores {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-areas: "vt vt"
+                         "v1 v4"
+                         "v2 v5"
+                         "v3 v6";
+}
+
+.valores p {
+    color: #000000;
+    text-align: justify;    
+}
+
+.valores summary {
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+
+.vt {
+    color: #A01027;
+    font-size: 50px;
+    grid-area: vt;
+}
+
+.v1,.derechos{
+    grid-area: v1;
+}
+
+.derechos p, .deberes p {
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.v2 {
+    grid-area: v2;
+}
+
+.v3 {
+    grid-area: v3;
+}
+
+.v4,.deberes {
+    grid-area: v4;
+}
+
+.v5 {
+    grid-area: v5;
+}
+
+.v6 {
+    grid-area: v6;
+}
+
+.politicas-img {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: rgb(221,221,221);
+    background: linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(232,232,234,1) 100%);}
+
+.politicas-img img{
+    width: 1700px;
+}
+
+.politicas {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-areas: "p1 p3"
+                         "p2 p4";
+}
+
+.politicas p {
+    color: #000000;
+    text-align: justify;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+
+.more {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "h4 h4"
+                         "btns btns";
+}
+
+.more h4{
+    grid-area: h4;
+    color: #000000;
+    font-size: x-large;
+    gap: 1rem;
+}
+.btn-more {
+    display: flex;
+    grid-area: btns;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.btn-more button {
+    background-color: #BD3C3C;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    border-radius: 10px;
+    border: none;   
+    width: 300px;
+    margin-right: 3%;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.btn-more button:hover{
+    background-color: #9b0e0e;
+    background-color: #9b0e0e;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn1 {
+    grid-area: btn1;
+}
+
+.btn2 {
+    grid-area: btn2;
+}
+
+@media screen and (max-width: 950px){
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+        }
+    }
+    
+    section {
+        grid-template-columns: 85%;
+        grid-template-areas: "i"
+                             "m"
+                             "v";
+    }
+
+    .valores {
+        grid-template-columns: 85%;
+        grid-template-areas: "vt"
+                             "v1"
+                             "v2"
+                             "v3"
+                             "v4"
+                             "v5"
+                             "v6";
+    }
+
+    .vt {
+        text-align: center;
+        line-height: 0.8;
+        margin-top: 1.5rem;
+    }
+
+    .politicas-img {
+        align-items: flex-end;
+    }
+    
+    .politicas-img img{
+        width: 120%;
+    }
+    
+    .politicas {
+        grid-template-columns: 85%;
+        margin-top: 0rem;
+        grid-template-areas: "p1"
+                             "p2"
+                             "p3"
+                             "p4";
+    }
+
+    .more {
+        margin-top: 2rem;
+        justify-items: stretch;
+        grid-template-columns: 85%;
+        grid-template-areas: "h4"
+                             "btns";
+    
+        & h4 {
+            text-align: center;
+        }
+    }
+    .btn-more {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

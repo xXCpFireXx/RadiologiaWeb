@@ -1,0 +1,119 @@
+
+body{    
+    font-family: 'Istok Web', sans-serif;
+    background-image: url(../img/Fondo-Servicios.jpg);
+    background-size: 160%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+/* Body */
+.title {
+    margin-top: 160px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.serv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.sect {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 25px 35px 25px;
+}
+
+.sect img {
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.s1, .s2, .s3, .s4, .s5, .s6 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.s1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);
+}
+
+
+.s2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);
+}
+
+.s3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);
+}
+
+
+.s4:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);
+}
+
+
+
+.s5:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);    
+}
+
+
+.s6:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.4);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 950px){
+
+    body {
+        background-size: cover;
+    }
+    .sect {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+        margin: 2rem;
+
+        & img{
+            width:250px;
+            height: 300px;
+            object-fit:cover;
+        }
+    }
+
+    
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#323232">
+    <title>Contacto</title>
+    <link rel="icon" href="./img/Logo.ico">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/Contact.css" />
+
+    <!-- Enlaces para cargar fuentes desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Estilos de BoxIcons para íconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Biblioteca Scroll Reveal para efectos de desplazamiento -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Biblioteca Toastify para notificaciones de mensajes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Carga del script de Google reCAPTCHA de manera asíncrona -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <!-- Navbar (barra de navegación) -->
+    <header>
+        <a href="./index"><img class="img-navbar" src="./img/Logo.png" alt="Logo" /></a>
+        <button id="open" class="open-nav"><i class='bx bx-menu'></i></button>
+
+        <!-- Menú de navegación -->
+        <nav class="nav" id="nav">
+            <button id="close" class="close-nav"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+              <li><a href="/index">INICIO</a></li>
+              <li><a href="/nosotros">NOSOTROS</a></li>
+              <li>
+                  <a href="servicios.html">SERVICIOS</a>
+                  <ul class="serv-in">
+                    <!-- Submenú de servicios -->
+                    <li><a href="./servicios/Tomografia"></a>Tomografía</li>
+                    <li><a href="./servicios/RX"></a>RX Convencional</li>
+                    <li><a href="./servicios/Mamografia"></a>Mamografía</li>
+                    <li><a href="./servicios/Resonancia"></a>Resonancia</li>
+                    <li><a href="./servicios/Ecografia"></a>Ecografía</li>
+                    <li><a href="./servicios/Especiales"></a>Procedimientos Especiales</li>
+                  </ul>
+                </li>
+                <li><a href="/resultados">RESULTADOS</a></li>
+                <li><a href="/contacto" style="color: #BD3C3C;">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="title">
+        <h1>Contáctanos</h1>
+        <p>Para brindarte la mejor atención posible, te pedimos amablemente que completes todos los campos del
+            siguiente formulario.</p>
+    </div>
+
+    <!-- Contenedor del formulario de contacto -->
+    <div class="container-out">
+        <div class="container-in">
+            <div class="formulario">
+                <!-- Formulario de contacto -->
+                <form id="ContactUsForm"
+                    action="https://script.google.com/macros/s/AKfycbxV_dXhSv9s8u7nEScRDpZ6-ilNuTBifXc-UBYJ9sCI7XDZrOdkSCfuE_Ytyp37nI_DLw/exec"
+                    method="POST">
+                    <div class="inputs" id="inputs">
+                        <!-- Campos de entrada -->
+                        <input type="text" id="input-name" name="NombrePQRS"
+                            placeholder="Nombre quien realiza la manifestación" required>
+                        <input type="text" id="input-namepcte" name="NombrePcte" placeholder="Nombre del paciente"
+                            required>
+                        <input type="text" id="input-cc" name="Documento" placeholder="Número de identificación"
+                            required>
+                        <input type="text" id="input-eps" name="EPS" placeholder="EPS">
+
+                        <!-- Selección de servicio -->
+                        <select name="Servicio" id="select-service" required>
+                            <option value="" selected disabled hidden>Seleciona un servicio</option>
+                            <option value="Ecografía">Ecografía</option>
+                            <option value="Tomografia">Tomografía</option>
+                            <option value="Exámenes Especiales">Exámenes Especiales</option>
+                            <option value="Resonancia">Resonancia</option>
+                            <option value="Mamografía">Mamografía</option>
+                            <option value="Biopsia">Biopsia</option>
+                            <option value="Rayos X">Rayos X</option>
+                            <option value="Intervencionismo">Intervencionismo</option>
+                        </select>
+
+                        <!-- Teléfonos y correo electrónico -->
+                        <input type="tel1" id="input-tel1" name="Telefono1" placeholder="Teléfono 1" required>
+                        <input type="tel2" id="input-tel2" name="Telefono2" placeholder="Teléfono 2">
+                        <input type="email" id="input-email" name="Email" placeholder="Correo electrónico" required>
+                    </div>
+                    <!-- Descripción y checkbox de términos -->
+                    <div class="mensaje">
+                        <textarea name="Descripcion" type="text" id="input-message" placeholder="Descripción"
+                            required></textarea>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="input-terms" required>
+                        <strong>Autorizo al Departamento de Radiología S.A al tratamiento de mis
+                            datos personales en
+                            conformidad a su Politica de Tratamiento y Protección de Datos</strong>
+                    </div>
+                    <!-- Google reCAPTCHA -->
+                    <div class="g-recaptcha" id="captcha"
+                        data-sitekey="6LcNkq8pAAAAAKXCnmwB8RXBsn4KB4KpHr55F_EE"></div>
+
+                    <!-- Botón de envío del formulario -->
+                    <div class="btn-form">
+                        <input type="submit" value="Enviar" onclick="onSubmit(event)"/>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Mapa de ubicación -->
+            <div class="map">
+                <div class="map-t">
+                    <h1>Ubicación</h1>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.116055502865!2d-75.5649139!3d6.2484345999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f87844d785%3A0xaa007bdb98696075!2sEdificio%20La%20Palencia!5e0!3m2!1ses!2sco!4v1705422741971!5m2!1ses!2sco"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+<!-- Liga de usuarios -->
+
+  <!--  <div class="container-out">
+        <div class="container-in-user">
+            <h2>LIGA DE USUARIOS</h2>
+            <p class="p-user">La liga de usuarios es un espacio institucional que tiene como misión de velar por
+                la calidad y oportunidad en la prestación del servicio y asegurar la defensa del usuario. Con su constitución se
+                fortalecen los espacios de participación activa de los usuarios del Departamento de Radiología S.A. y su familia,
+                contribuyendo al fortalecimiento de la institución a partir de la detección y reporte de las necesidades
+                y expectativas de los mismos.</p>              
+
+            <p class="p-user">Haz parte de la liga de usuarios del Departamento de Radiología S.A., inscribiéndose a través
+                del correo electrónico <strong>calidad@dptoradiologia.com</strong> o llamando al teléfono: <strong>604 403 2585 ext. 116</strong></p>
+        </div>
+    </div>
+    <br><br>-->
+
+    <!-- Modal para mostrar estados financieros -->
+    <input type="checkbox" id="btn-modal">
+    <div class="modal-container">
+        <div class="modal-content">
+            <div class="modal__close close-modal" title="Close">
+                <label for="btn-modal"><i class='bx bx-x'></i></label>
+            </div>
+            <h1 class="modal__title">Estados Financieros 2022</h1>
+            <!-- Botones de enlaces a los estados financieros -->
+            <div class="btns-modal">
+                <a href="https://drive.google.com/file/d/1d6ZkG7yOf5IR-y8Iu-x-vf2jvO_kSvXj/view" target="_blank"><button>Estado
+                    de Resultado Integral</button></a>
+                <a href="https://drive.google.com/file/d/1e6SeNNGG1MhlmBaMSCf5fnHp5H5Prb-3/view?usp=sharing"
+                  target="_blank"><button>Notas a los Estados Financieros</button></a>
+                <a href="https://drive.google.com/file/d/1KN6vP0bqa8XkD6Qt5RQ05qvtwgZTBFKW/view" target="_blank"><button>Estado
+                    de Cambio en el Patrimonio</button></a>
+                <a href="https://drive.google.com/file/d/1HYurQ6ZGpRLZ7_7yqJa5aWesZIoZ9yqF/view?usp=sharing"
+                  target="_blank"><button>Estado de la Situación Financiera
+                    Individual</button></a>
+                <a href="https://drive.google.com/file/d/17DlxycFD0DERkA0OfiCmlI5agG7kVxM-/view?usp=sharing"
+                  target="_blank"><button>Estado de Flujo Efectivo Método Indirecto</button></a>
+            </div>
+        </div>
+        <label for="btn-modal" class="cerrar"></label>
+    </div>
+
+    <!-- Footer (pie de página) -->
+    <footer>
+        <div class="img-salud">
+            <img src="./img/logo-supersaludblanco.png" alt="Logo_Supersalud">
+        </div>
+        <div class="bloque2">
+            <!-- Dirección de correo electrónico y ubicación -->
+            <h4>Correo electrónico</h4>
+            <a href="mailto:calidad@dptoradiologia.com" target="_blank">calidad@dptoradiologia.com</a>
+            <!-- Dirección física -->
+            <h4>Dirección</h4>
+            <a href="https://maps.app.goo.gl/pJuejCYB29dg3StD9" target="_blank">Edificio La Palencia. Cra. 46 #
+                50-28, La
+                Candelaria,
+                Medellín.</a>
+        </div>
+        <div class="bloque3">
+            <!-- Enlaces a políticas, estados financieros y otros recursos -->
+            <a href="https://drive.google.com/file/d/1d_zIxSml613T6C6upveJeQ0q4KySRdfW/view" target="_blank">Política de
+                Tratamiento y Protección de Datos.</a>
+            <label for="btn-modal">Estados Financieros 2022</label>
+            <a href="/contacto">PQRS</a>
+            <a href="https://sites.google.com/dptoradiologia.com/intranet/" style="color: rgb(235, 99, 99)"
+                target="_blank">Intranet</a>
+        </div>
+    </footer>
+
+    <!-- Scripts al final del documento -->
+    <script src="./main.js"></script>
+    <script src="./js/pqrs.js"></script>
+</body>
+
+</html>

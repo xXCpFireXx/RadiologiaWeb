@@ -1,0 +1,220 @@
+body{
+    scrollbar-width: none;
+}
+
+html{
+    scrollbar-width: none;
+}
+
+
+.title{
+    display: grid;
+    grid-template-columns: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+.title h1 {
+    color: #000000; 
+    font-size: 60px;
+    text-align: center;
+}
+
+.title p {
+    color: #000000;
+    text-align:justify;
+    font-size: 20px;
+}
+
+/* Slider */
+.container-carousel-out {
+    display: flex;
+    justify-content: center;
+}
+
+.container-carousel {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    border:1px solid #BD3C3C;
+}
+
+.carruseles {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    border: 2px black;
+}
+
+.slider-section {
+    width: calc(100% / 4);
+    height: 100%;
+    border: 2px#000000;
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000000;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #BD3C3C;
+    color: #ffffff;
+}
+
+.btn-left {
+    left: 5px;
+}
+
+.btn-right {
+    right: 5px;
+}
+
+
+
+/* Preparaciones */
+.container-out {
+    display: flex;
+    justify-content: center;
+}
+.container-in {
+    display: flex;    
+    justify-content: center;
+    justify-items: center;
+    background-color: #BD3C3C;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 3rem 2rem 3rem;
+}
+
+
+
+.preparaciones {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 950px;
+    align-items: center;
+    justify-content: center;
+}
+.preparaciones h4 {
+    color: #ffffff;
+}
+
+.preparaciones label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Istok Web';
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+select#examen {
+    border: 1px solid #908f8f;
+    border-radius: 8px;
+    font-family: 'Istok Web';
+    font-size: 1rem;
+    box-shadow: 5px 7px 5px -4px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+textarea#resultado {
+    resize: vertical;
+    border: none;
+    height: 18rem;   
+    font-family: 'Istok Web';
+    font-size: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    border-radius: 1rem;
+}
+
+.bibliografia {
+    display: grid;
+    grid-template-columns: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.bibliografia p{
+    color: #8f8f8f;
+    font-style: normal;
+
+}
+
+.bibliografia cite, a{
+    color: #8f8f8f;
+}
+
+.bibliografia h4 {
+    color: #000000;
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .title{
+        grid-template-columns: 85%;
+
+        & h1 {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+        }
+    }
+
+    .container-carousel-out {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    
+    .btn-left,
+    .btn-right {
+    font-size: 1.5rem;
+    padding: 0px;
+    transform: translate(0,-70%);
+    }
+
+    .preparaciones {
+    grid-template-columns: 90%;
+    text-align: center;
+    width: 120%;
+    }
+
+    .container-out {
+        margin: 1rem;
+    }
+
+    .container-in {
+        width: 100%;
+    }
+    .bibliografia {
+        grid-template-columns: 85%;
+    }
+    
+    .bibliografia cite, a{
+    font-size: small;
+    }
+
+}
