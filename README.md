@@ -29,3 +29,6 @@ El desarrollo del sitio se realizó con las siguientes tecnologías:
 
 📍 Puedes visitar el sitio web en:  
 🔗 [https://dptoradiologia.com/](https://dptoradiologia.com/)
+
+
+© 2024 - Departamento de Radiología. Todos los derechos reservados.
